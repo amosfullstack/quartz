@@ -1,5 +1,3 @@
-____
-
 Short answer: **I couldn’t find any public, confirmed examples of Quartz/Obsidian sites that openly run ad networks (Adsense/banners)**. I searched blogs, community posts, GitHub and public Quartz sites — most Quartz/Obsidian gardens are ad-free or use other monetization (Patreon, donations) and many authors value minimalism and performance. ([Hamatti Notes](https://notes.hamatti.org/technology/building-a-digital-garden-with-obsidian-and-quartz?utm_source=chatgpt.com "Building a digital garden with Obsidian and Quartz"))
 
 Below is a clear summary of what I found + practical next steps if you want ads on a Quartz/Obsidian site.
