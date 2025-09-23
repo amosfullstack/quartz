@@ -8,8 +8,8 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Amos",
-    pageTitleSuffix: "",
+    pageTitle: "🌱Amos DevOps",
+    pageTitleSuffix: " | DevOps and Software Engineer",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
@@ -27,6 +27,8 @@ const config: QuartzConfig = {
         body: "Source Sans Pro",
         code: "IBM Plex Mono",
       },
+
+  
       colors: {
         lightMode: {
           light: "#faf8f8",
@@ -50,7 +52,8 @@ const config: QuartzConfig = {
           highlight: "rgba(143, 159, 169, 0.15)",
           textHighlight: "#b3aa0288",
         },
-      },
+      },  
+
     },
   },
   plugins: {

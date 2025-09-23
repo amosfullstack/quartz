@@ -1,11 +1,191 @@
 @use "./base.scss";
 
-// put your custom CSS here!
 
-.cm-header-1 { color: #f37b84; }  
-.cm-header-2 { color: #ffd98c; }
-.cm-header-3 { color: #9ff369; }
-.cm-header-4 { color: #59d5c4; }
-.cm-header-5 { color: #2a8aff; }
-.cm-header-6 { color: #b99aff; }
+// 1. The Heading Customization
+
+:root {
+  --main-accent: #28a745; /* A GitHub-style green */
+}
+
+/* Headings */
+h1, .cm-header-1 {
+  color: #28a745 !important; /* Green for largest heading */
+}
+
+h2, .cm-header-2 {
+  color: #ffd98c !important;
+}
+
+h3, .cm-header-3 {
+  color: #9ff369 !important;
+}
+
+h4, .cm-header-4 {
+  color: #59d5c4 !important;
+}
+
+h5, .cm-header-5 {
+  color: #2a8aff !important;
+}
+
+h6, .cm-header-6 {
+  color: #b99aff !important;
+}
+
+
+// 2. The Graph Customization
+/* 🤖 Cyber Brain Graph Theme - Multi-colored Neon Nodes */
+.theme-dark {
+  /* Base colors */
+  --graph-line: #0ff;               /* default edges */
+  --graph-line-highlight: #ff0;     /* highlighted edges */
+  --graph-node: #0ff;               /* cyan nodes */
+  --graph-node-unresolved: #ff3b3b; /* red nodes */
+  --graph-node-attachment: #ff9f00; /* orange nodes */
+  --graph-node-tag: #bb00ff;        /* magenta nodes */
+  --graph-node-highlight: #00ff99;  /* neon green hover */
+}
+
+/* Node styling with glow & transitions */
+.graph-view.color-fill {
+  color: var(--graph-node) !important;
+  opacity: 0.95;
+  filter: drop-shadow(0 0 12px var(--graph-node));
+  transition: all 0.3s ease;
+}
+.graph-view.color-fill-unresolved {
+  color: var(--graph-node-unresolved) !important;
+  filter: drop-shadow(0 0 12px var(--graph-node-unresolved));
+}
+.graph-view.color-fill-attachment {
+  color: var(--graph-node-attachment) !important;
+  filter: drop-shadow(0 0 12px var(--graph-node-attachment));
+}
+.graph-view.color-fill-tag {
+  color: var(--graph-node-tag) !important;
+  filter: drop-shadow(0 0 12px var(--graph-node-tag));
+}
+.graph-view.color-fill-highlight {
+  color: var(--graph-node-highlight) !important;
+  filter: drop-shadow(0 0 20px var(--graph-node-highlight));
+  transform: scale(1.1);
+}
+
+/* Edge styling with neon glow */
+.graph-view.color-line {
+  color: var(--graph-line) !important;
+  opacity: 0.6;
+  filter: drop-shadow(0 0 4px var(--graph-line));
+  transition: all 0.3s ease;
+}
+.graph-view.color-line-highlight {
+  color: var(--graph-line-highlight) !important;
+  opacity: 1;
+  filter: drop-shadow(0 0 8px var(--graph-line-highlight));
+}
+
+/* Background - cyberpunk gradient */
+.graph-view {
+  background: radial-gradient(circle at center, #0a0a0f 20%, #000000 100%) !important;
+}
+
+
+
+
+// 3. Github theme finally
+/* ================================
+   🌱 GitHub-Inspired Quartz Theme
+   ================================ */
+
+/* === Base Typography === */
+body {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #0d1117; /* GitHub dark background */
+  color: #c9d1d9;      /* Default text color */
+}
+
+/* === Headings (GitHub palette + your green for H1) === */
+h1, .cm-header-1 {
+  color: #28a745 !important; /* Green */
+  //border-bottom: 2px solid rgba(40,167,69,0.4);
+  //padding-bottom: 0.3em;
+}
+
+h2, .cm-header-2 { color: #ffd98c !important; }
+h3, .cm-header-3 { color: #9ff369 !important; }
+h4, .cm-header-4 { color: #59d5c4 !important; }
+h5, .cm-header-5 { color: #2a8aff !important; }
+h6, .cm-header-6 { color: #b99aff !important; }
+
+/* === Links === */
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+a:hover {
+  color: #79c0ff;
+  text-decoration: underline;
+}
+
+/* === Code & Inline Code === */
+code {
+  background: #161b22;
+  color: #ff7b72;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.95em;
+}
+pre {
+  background: #161b22;
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+/* === Blockquotes === */
+blockquote {
+  border-left: 4px solid #2ea043;
+  padding-left: 1em;
+  color: #8b949e;
+  font-style: italic;
+}
+
+/* === Tables === */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+th, td {
+  border: 1px solid #30363d;
+  padding: 0.6em;
+}
+th {
+  background: #161b22;
+  color: #c9d1d9;
+}
+
+/* === Callouts (GitHub-style notes/warnings) === */
+.callout {
+  border-left: 4px solid var(--callout-color, #58a6ff);
+  background: rgba(88, 166, 255, 0.1);
+  padding: 1em;
+  border-radius: 6px;
+  margin: 1em 0;
+}
+.callout-title {
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+
+/* === Graph View (optional match to theme) === */
+.graph-view {
+  background: radial-gradient(circle at center, #0d1117 20%, #000000 100%) !important;
+}
+
+//3. Remove Footer
+
+
 
