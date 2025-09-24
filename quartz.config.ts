@@ -31,15 +31,24 @@ const config: QuartzConfig = {
   
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
+          //  light: "#faf8f8",
+          //  lightgray: "#e5e5e5",
+          //  gray: "#b8b8b8",
+          //  darkgray: "#ffffffff",
+          //  dark: "#ffffffff",
+          //  secondary: "#284b63",
+          //  tertiary: "#81e7cdff",
+          //  highlight: "rgba(48, 241, 83, 0.15)",
           textHighlight: "#fff23688",
+
+          light: "#faf8f8",           // Will be overridden by CSS to #FFF7ED
+  lightgray: "#F5F0E6",       // Slightly darker cream for panels
+  gray: "#D4C9B1",            // Warm gray for borders
+  darkgray: "#5C5343",        // Warm brown for body text (good readability)
+  dark: "#3A3429",            // Dark brown for headings
+  secondary: "#8B7355",       // Warm brown for links
+  tertiary: "#81e7cdff",      // Keep your teal accent
+  highlight: "rgba(139, 115, 85, 0.2)", // Warm brown highlight
         },
         darkMode: {
           light: "#161618",

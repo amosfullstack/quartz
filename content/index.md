@@ -93,3 +93,6 @@ Every contribution makes this space more valuable for all of us.
 6. C++ PROGRAMMING
 7. COMPUTER ARCHITECTURE
 8. <span style="color:rgb(255, 0, 255)">SOLUTIONS FOR ALL THE ABOVE..</span>
+9. <span style="color:rgb(0, 176, 80)">Project 2 : TRUE ENGINEER</span>
+10. <span style="color:rgb(0, 176, 80)">Project 3 : ENGINEERS ARE RICH</span>
+   

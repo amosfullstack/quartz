@@ -98,12 +98,12 @@ h6, .cm-header-6 {
    ================================ */
 
 /* === Base Typography === */
-body {
-  font-family: "Inter", "Segoe UI", sans-serif;
-  line-height: 1.6;
-  background: #0d1117; /* GitHub dark background */
-  color: #c9d1d9;      /* Default text color */
-}
+// body {
+//   font-family: "Inter", "Segoe UI", sans-serif;
+//   line-height: 1.6;
+//   background: #0d1117; /* GitHub dark background */
+//   color: #c9d1d9;      /* Default text color */
+// } 
 
 /* === Headings (GitHub palette + your green for H1) === */
 
@@ -187,6 +187,64 @@ th {
 }
 
 //3. Remove Footer
+// Set the actual background color
+[data-theme="light"] {
+  background-color: #FFF7ED !important;
+  
+  body, .page, .content, .sidebar, main {
+    background-color: #FFF7ED !important;
+  }
+  
+  // Your vibrant header colors (they'll pop on cream)
+  h2, .cm-header-2 { 
+    color: #ffd98c !important;    // Yellow
+    border-left: 4px solid #ffd98c;
+    padding-left: 1rem;
+  }
+  
+  h3, .cm-header-3 { 
+    color: #9ff369 !important;    // Green
+    border-left: 3px solid #9ff369;
+    padding-left: 1rem;
+  }
+  
+  h4, .cm-header-4 { 
+    color: #59d5c4 !important;    // Teal
+    border-left: 2px solid #59d5c4;
+    padding-left: 1rem;
+  }
+  
+  h5, .cm-header-5 { 
+    color: #2a8aff !important;    // Blue
+  }
+  
+  h6, .cm-header-6 { 
+    color: #b99aff !important;    // Purple
+  }
+  
+  // Links that match the warm theme
+  a {
+    color: #8B7355 !important;
+    &:hover {
+      color: #A89276 !important;
+      background: rgba(139, 115, 85, 0.1);
+    }
+  }
+  
+  // Code blocks with cream-appropriate styling
+  pre, code {
+    background: #F5F0E6 !important;
+    border: 1px solid #D4C9B1;
+    color: #5C5343;
+  }
+}
 
+// Text selection highlight
+::selection {
+  background: rgba(255, 210, 54, 0.3) !important; // Softer yellow
+}
+
+  
+  
 
 

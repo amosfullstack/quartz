@@ -23,6 +23,9 @@ import Breadcrumbs from "./Breadcrumbs"
 import Comments from "./Comments"
 import Flex from "./Flex"
 import ConditionalRender from "./ConditionalRender"
+// Add to your existing imports
+import Analytics from "./Analytics"
+
 
 export {
   ArticleTitle,
@@ -50,4 +53,6 @@ export {
   Comments,
   Flex,
   ConditionalRender,
+  Analytics, //Analytics Exported here
+
 }

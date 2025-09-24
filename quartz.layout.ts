@@ -5,7 +5,7 @@ import * as Component from "./quartz/components"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [Component.Analytics(),], //Added the Analytics Component
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/jackyzha0/quartz",
@@ -66,3 +66,5 @@ export const defaultListPageLayout: PageLayout = {
   ],
   right: [],
 }
+
+
