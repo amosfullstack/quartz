@@ -8,13 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Amos🌱💎",
+    pageTitle: "MGODI⛏‍💎",
     pageTitleSuffix: " | DevOps and Software Engineer",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
+    
     locale: "en-US",
     baseUrl: "greensr2.netlify.app",
     ignorePatterns: ["private", "templates", ".obsidian"],
