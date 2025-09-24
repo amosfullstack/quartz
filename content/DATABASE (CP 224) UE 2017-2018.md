@@ -1,5 +1,4 @@
-
-# Database Management Systems Exam - CS 216
+#### Database Management Systems Exam - CS 216
 
 **University of Dodoma**  
 College of Informatics and Virtual Education  

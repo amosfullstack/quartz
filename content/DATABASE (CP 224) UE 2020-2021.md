@@ -1,5 +1,4 @@
-
-# Database Management System Exam - CP 224/CS 228
+#### Database Management System Exam - CP 224/CS 228
 
 **University of Dodoma**  
 College of Informatics and Virtual Education  

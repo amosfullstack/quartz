@@ -1,5 +1,4 @@
-
-# Database Management Systems Examination
+#### Database Management Systems Examination
 
 ## SECTION A: (40 MARKS)
 *Attempt ALL questions in this section.*

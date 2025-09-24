@@ -12,9 +12,20 @@ export default ((opts?: Options) => {
     const year = new Date().getFullYear()
     const links = opts?.links ?? []
     return (
-      <footer>
-       <p>© 2025 Amos Samwel All Rights Reserved</p>
-      </footer>
+      //I added this footer
+<footer style="background:#222; color:#ddd; text-align:center; padding:20px; font-size:14px;">
+  <p>© 2025 Amos Samwel | All Rights Reserved</p>
+  <p>
+    <span>Contact me : </span>
+    <a href="https://wa.me/255744026640" target="_blank" style="color:#25D366; font-weight:bold; text-decoration:none;">
+      WhatsApp
+    </a> | 
+    <a href="mailto:amossamwel253@gmail.com" style="color:#4da6ff; font-weight:bold; text-decoration:none;">
+      Email
+    </a>
+  </p>
+  </footer>
+
 
     )
   }
