@@ -1,8 +1,8 @@
 ---
-title: "Project 1 : Green SR2"
-description: Turning Academic Struggles into Success Stories
+title: LEARNING AS ONE 🌱
+description: A structured learning approach to help everyone succeed
 ---
-# Welcome to Our Community 🌱
+# Welcome to Our Community 
 
 - This is the right place for you to <span style="color:rgb(0, 176, 80)">study smarter</span> and capture the subject matter as quickly as possible.<br>
 

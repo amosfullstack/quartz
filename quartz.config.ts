@@ -8,13 +8,14 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "MGODI⛏‍💎",
-    pageTitleSuffix: " | DevOps and Software Engineer",
+    pageTitle: "MGODI💎",
+    pageTitleSuffix: " | A Structured learning approach to help everyone succeed",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
+
     
     locale: "en-US",
     baseUrl: "greensr2.netlify.app",
