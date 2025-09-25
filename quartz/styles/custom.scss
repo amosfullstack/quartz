@@ -146,12 +146,13 @@ pre {
 }
 
 /* === Blockquotes === */
+/*
 blockquote {
   border-left: 4px solid #2ea043;
   padding-left: 1em;
   color: #8b949e;
   font-style: italic;
-}
+}*/
 
 /* === Tables === */
 table {
@@ -169,6 +170,7 @@ th {
 }
 
 /* === Callouts (GitHub-style notes/warnings) === */
+/*
 .callout {
   border-left: 4px solid var(--callout-color, #58a6ff);
   background: rgba(88, 166, 255, 0.1);
@@ -179,11 +181,11 @@ th {
 .callout-title {
   font-weight: bold;
   margin-bottom: 0.3em;
-}
+}*/
 
 /* === Graph View (optional match to theme) === */
 .graph-view {
-  background: radial-gradient(circle at center, #0d1117 20%, #000000 100%) !important;
+  background: radial-gradient(circle at center, #f5d20c 20%, #3de200 100%) !important;
 }
 
 //3. Remove Footer

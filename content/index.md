@@ -31,13 +31,13 @@ We believe in sharing knowledge. If you would like to help, here is how:
 - <span style="color:rgb(0, 176, 80)">Share new study materials</span> that could help others. 
 
 > [!Tip] 
-> Materials should be well typed and Accurate in <span style="color:rgb(255, 255, 0)">word format or .txt</span>, we do not accept copied and paste<span style="color:rgb(255, 148, 148)"> AI gibrish</span>. The content should be authentic ie: Created by human. AI is just an assistant.
+> Materials should be well typed and Accurate in <span style="color:rgb(255, 255, 0)">.docx</span> or <span style="color:rgb(255, 255, 0)">.txt </span>format. The content should be authentic ie: Created by human. AI is just an assistant.
     
 Every contribution makes this space more valuable for all of us.
 
 ## Stay Connected
 
-- For any inquiries or submissions, reach out via WhatsApp ONLY <span style="color:rgb(255, 0, 255)">0744026640</span>.  
+- For any suggestions,inquiries or submissions, reach out via WhatsApp ONLY,link on footer.  
 - Your <span style="color:rgb(0, 176, 80)">efforts</span> will always be <span style="color:rgb(255, 255, 0)">recognized</span> and appreciated.
 
 
