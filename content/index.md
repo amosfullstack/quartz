@@ -48,6 +48,14 @@ Every contribution makes this space more valuable for all of us.
 > [!Note]
 > We are just getting Started. Looking Foward to Recieve more valuable content through community Contribution.
 
+  STUDY GUIDES
+  - [[Study Guide - Conquer the OS (CP 226) Exam with Scheduler Speed]]
+  - [[Study Guide - Pass the DSA (CP 213) Exam Like a  Ninja]]
+  - [[Study Guide - Pass Java (CP 215) Exams Like Drinking Water]]
+  - [[Study Guide - Conquer the Linux(CP 211) Exam like Jet Li]]
+  - [[Study Guide - Conquer the Database (CP 224) Exam like a Data Architect]]
+  
+
 1. OPERATING SYSTEMS
 - [[OS (CP 226) UE 2022-2023]]
 - [[OS (CP 226) UE 2021-2022]]
