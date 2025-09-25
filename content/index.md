@@ -87,12 +87,22 @@ Every contribution makes this space more valuable for all of us.
 - [[JAVA (CP 215) UE 2014-2015]]
 - [[JAVA (CP 215) UE 2013-2014]]
 
+5. LINUX  AND UNIX : <span style="color:rgb(255, 0, 255)">NEW</span>
+- [[LINUX (CP 211) UE 2022-2023]]
+- [[LINUX (CP 211) UE 2022-2023 SOLVED]]
+- [[LINUX (CP 211) UE 2021-2022 SOLVED]]
+- [[LINUX (CP 211) UE 2019-2020]]
+- [[LINUX (CP 211) UE 2018-2019 SUP-EXAM]]
+- [[LINUX (CP 211) UE 2017-2018]]
+- [[LINUX (CP 211) UE 2013-2014 SOLVED]]
+
+
 <span style="color:rgb(0, 176, 80)">UPCOMMING...</span>
 
-5. LINUX  AND UNIX
-6. C++ PROGRAMMING
-7. COMPUTER ARCHITECTURE
-8. <span style="color:rgb(255, 0, 255)">SOLUTIONS FOR ALL THE ABOVE..</span>
-9. <span style="color:rgb(0, 176, 80)">Project 2 : TRUE ENGINEER</span>
-10. <span style="color:rgb(0, 176, 80)">Project 3 : ENGINEERS ARE RICH</span>
+
+2. C++ PROGRAMMING
+3. COMPUTER ARCHITECTURE
+4. <span style="color:rgb(255, 0, 255)">SOLUTIONS FOR ALL THE ABOVE..</span>
+5. <span style="color:rgb(0, 176, 80)">Project 2 : TRUE ENGINEER</span>
+6. <span style="color:rgb(0, 176, 80)">Project 3 : ENGINEERS ARE RICH</span>
    
