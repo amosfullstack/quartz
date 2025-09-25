@@ -1,7 +1,7 @@
 
 #### **Study Guide / Roadmap for Linux/UNIX Systems (CP 211)**
 
-This is all you need to Conquer the LINUX Exam like a Kung Fu Master. But also you will understand the Linux System like never before.
+This is all you need to Conquer the LINUX Exam like a Kung Fu Master. But also you will understand the Linux System like never before. If you finish this roadmap go to BOT(Bank of Tanzania)  and apply for system admin job. (4 Hours only to cover)
 
 ### Step 1. **Introduction to Linux/UNIX**
 

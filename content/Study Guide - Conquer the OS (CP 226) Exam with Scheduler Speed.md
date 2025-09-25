@@ -1,14 +1,14 @@
 
 #### Operating Systems - VIPENGELE Roadmap 
 
-Hello friend, Do not roam in the bush. This is exactly all you need to know in to Understant the entire OS. It is not hard, you just need a roadmap to follow.
+Hello friend, Do not roam in the bush. This is exactly all you need in order to know and understant the entire OS. It is not hard, you just need a roadmap to follow. I guarantee you to pass then come back and buy me potatoes.
 
 ### **Step 1. Introduction to Operating Systems** 
 
 **Primary Source: NESO Academy**
 
 i. **Key Concepts:**
-- **Definition nadPurpose of OS**: What is an OS? Why do we need it?
+- **Definition and Purpose of OS**: What is an OS? Why do we need it?
 - **Types of OS**: 
   - Time-sharing, Distributed, Real-time, Embedded, Mobile
 - **OS Structures**:
@@ -22,11 +22,12 @@ ii. **Study Focus:**
 ---
 
 ### **Step 2. Process Management** 
+
 **Primary Source: NESO Academy**  
 **Secondary: TutorialsPoint**
 
 i. **Must Know Topics:**
-- **Process vs Program**: Difference and relationship
+- **Process vs Program**: Know the difference and relationship
 - **Process States**: New, Ready, Running, Waiting, Terminated
 - **PCB (Process Control Block)**: What it contains and why it is important
 - **Scheduling Types**: Preemptive vs Non-preemptive
@@ -45,10 +46,10 @@ ii. **Practice:** (Go to a specific subtopic and solve)
 ### **Step 3. CPU Scheduling** 
 **Primary Source: TutorialsPoint + NESO Academy**
 
-i. **Scheduling Criteria** (Understand each thoroughly):
+i. **Scheduling Criteria** (Understand each very well):
 - CPU Utilization, Throughput, Turnaround Time, Waiting Time, Response Time
 
-ii. **Scheduling Algorithms** (Practice Calculations!):
+ii. **Scheduling Algorithms** (Practice Calculations):
 - **FCFS** (First Come First Served)
 - **SJF** (Shortest Job First) - both non-preemptive and preemptive
 - **Round Robin** 
@@ -64,6 +65,7 @@ iii. **Study Strategy:**
 ---
 
 ### **Step 4. Synchronization** 
+
 **Primary Source: TutorialsPoint**  
 **Secondary: NESO Academy**
 
@@ -86,6 +88,7 @@ i. **Critical Topics:**
 ---
 
 ### **Step 5. Deadlocks** 
+
 **Primary Source: TutorialsPoint ONLY**
 
 i. **Deadlock Concepts:**
@@ -106,6 +109,7 @@ iii. **Study Tip:**
 ---
 
 ### **Step 6. Memory Management** 
+
 **Primary Source: TutorialsPoint ONLY**
 
 i. **Key Areas:**
@@ -127,6 +131,7 @@ ii. **Practice Focus:**
 ---
 
 ### Step **7. Storage Management**
+
 **Primary Source: TutorialsPoint ONLY**
 
 i. **Disk Terminology** (Must Understand):
@@ -153,7 +158,7 @@ iii. **Study Strategy:**
 2. **Input/Output Systems** 
 3. **Protection and Security**
 
-*These topics are explicitly excluded from your syllabus!*
+*These topics are excluded from our syllabus! Study them for your own advantage*
 
 ---
 ### **4-Hour Study Plan**

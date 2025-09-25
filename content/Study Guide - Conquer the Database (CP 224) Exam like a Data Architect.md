@@ -1,5 +1,4 @@
 
-
 #### Database Management Systems (CP 224) – Exam Mastery Roadmap 
 
 This roadmap will guide you step by step to **master ADVANCED DBMS concepts** very fast and **pass exams with confidence**, while also building skills that are directly useful in real world systems.

@@ -1,8 +1,8 @@
 #### Roadmap: **Object-Oriented Programming in Java (OOP in Java)**
 
-Follow this roadmap step by Step and you will find yourself being a master at Java in one day. You will find out that Java is very simple just like drinking water.
+Follow this roadmap step by step and you will find yourself being a master at Java in one day. You will find out that Java is very simple just like drinking water.
 ### **Step 1. Java Basics (Foundation)**
-
+Start with the basic syntax.
 - **Syntax and Structure** : Every Java program has a `class` and a `main()` method (entry point).
 - **Data Types** : `int`, `double`, `char`, `boolean`, `String`.
 - **Operators** : `+`, `-`, `*`, `/`, `%`, logical (`&&`, `||`).
@@ -13,10 +13,10 @@ Follow this roadmap step by Step and you will find yourself being a master at Ja
 ---
 
 ### **Step 2. Classes and Objects (Core of OOP)**
-   
+   Learn how to create java classes.
 - **Class** :A blueprint that defines attributes (fields) + behaviors (methods).
 - **Object** : A real instance created from a class using `new`.
-    
+- Understant the components/ building blocks of the Java class ie attributes,methods,constructors, getters and setters.   
 
 **Class Example :**
 
@@ -33,7 +33,8 @@ NB : Classes/objects = foundation of Java.
 ---
 
 ### **Step 3. Encapsulation (Data Hiding)**
-Learn how data is hiden from users, and thy are able to access only what is needed. Eg you cant edit your bank balance.
+
+Learn how data is hiden from users, and they are able to access only what is needed. Eg you can't edit your bank balance. The users cant access and modify sensitive system data.
 
 - **Definition** : Wrapping variables + methods in a class, restricting direct access.    
 - **How** : Use `private` fields + `public` getters/setters.
@@ -52,7 +53,8 @@ NB: Encapsulation Protects data, ensures controlled access.
 ---
 
 ### **Step 4. Inheritance (Code Reuse)**
-Learn how to implement inheritance and its importance in OOP
+
+Learn how to implement inheritance and its importance in OOP.
 
 - **Definition** : One class inherits properties/methods of another.
 - **Keyword** : `extends`.
@@ -69,7 +71,8 @@ NB : Inheritance Promotes code reuse, builds hierarchy.
 ---
 
 ### **Step 5. Polymorphism (Many Forms)**
-Learn how the Objects can be multipurposed in java.
+
+Learn how the methods can be multipurposed in java.
 
 - **Definition** :  Same method name, different behavior.
     
@@ -83,11 +86,12 @@ class Shape { void draw() { } }
 class Circle extends Shape { void draw() { System.out.println("Circle"); } }
 ```
 
- NB: Polymorphism Increases flexibility, reduces code duplication.
+ NB: Polymorphism increases flexibility, reduces code duplication.
 
 ---
 
 ### **Step 6. Abstraction (Hiding Details)**
+
 Learn how abstraction is implemented in Java.
 
 - **Definition** : Showing only essential details, hiding implementation.
@@ -96,12 +100,23 @@ Learn how abstraction is implemented in Java.
 
 #### **Abstract Class**
 
-- Can have abstract (without body) + concrete methods.
+- Can have abstract methods + concrete methods.
+- Abstract methods are methods that are declared without the body.
     
 **Example of Abstract Class:**
 ```java
-abstract class Shape { abstract void draw(); }
-class Circle extends Shape { void draw() { System.out.println("Circle"); } }
+abstract class Shape { //Abstract Class
+
+   abstract void draw();  //Abstract method
+   
+   }
+class Circle extends Shape { 
+
+    void draw() { System.out.println("Circle");//Overriding abstract method
+    
+    } 
+ 
+ }
 ```
 
 #### **Interface**
@@ -111,22 +126,31 @@ class Circle extends Shape { void draw() { System.out.println("Circle"); } }
     
 **Example:**
 ```java
-interface Animal { void sound(); }
-class Dog implements Animal { public void sound() { System.out.println("Bark"); } }
+interface Animal { //An Interface
+    void sound();  //Abstract method
+    
+    }
+class Dog implements Animal { //Class implementing interface
+    public void sound() { 
+       System.out.println("Bark"); 
+       } 
+  }
 ```
 
 NB: Interface allows multiple inheritance and enforces structure.
 
-(PERFORM THE QUESTION OF Interface Payable)
+(PERFORM THE QUESTION OF Interface Payable it is always in Exams)
 
 ---
 
 ### **Step 7. Constructors (Object Initialization)**
+
+Learn how the constructor is created in the class.
 Lean how to instantiate an Object from a class using a constructor.
 
 - **Definition** : Special method with same name as class.
     
-- **Types** :
+- **Types of constructors** : (Learn them)
     - Default → No parameters.
     - Parameterized → Accepts values.
         
@@ -143,6 +167,7 @@ NB : Constructor Saves time in setting initial values.
 ---
 
 ### **Step 8. Access Modifiers (Control Access)**
+
 Learn how to set the accessibility of objects in Java.
 - **public** : Visible everywhere.
 - **private** : Only inside the same class.
@@ -155,7 +180,8 @@ Learn how to set the accessibility of objects in Java.
 ---
 
 ### **Step 9. Exception Handling (Error Management)**
-Learn how to handel errors in the Java Programe
+
+Learn how to handle errors in the Java Programe
 - **Definition** : Handling runtime errors gracefully.
 - **Keywords** → `try`, `catch`, `finally`, `throw`, `throws`.
     

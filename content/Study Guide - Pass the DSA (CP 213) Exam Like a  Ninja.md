@@ -1,6 +1,6 @@
 #### **Data Structures AND Algorithms - Ninja Study Guide**
 
-So, this is what you should follow so us to understand datastructure. Become a Tai chi master in DSA. Also pass all the exams that come in your way.
+So, this is what you should follow so us to understand data structures and algorithms. Become a Tai chi master in DSA. Also pass all the exams that come in your way.
 
 ### **Step 1: Algorithm Analysis and Complexity**
 - The Foundation, lean how algorithms work.
@@ -40,6 +40,7 @@ bool findElement(int arr[], int n, int target) {
 ---
 
 ### **Step 2: Learn Arrays  - Your First Weapons**
+
 - This is the basic data structure you start with
 
 i. **Arrays: The Basic Building Blocks**
@@ -180,7 +181,9 @@ ii. **Learn the Binary Search Tree (BST) :**
 - **Operations**: Insert, Delete, Search, Traverse
 
 iii. **Tree Traversals (Just Memorize):**
+
 (If you are not lucky, you might face it as code provided, So study their code and how they work)
+
 ```cpp
 class TreeNode {
 public:
