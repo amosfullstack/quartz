@@ -1,8 +1,32 @@
 ---
-title: LEARNING AS ONE 🌱
+title: MGODI | LEARNING AS ONE ✨
 description: A structured learning approach to help everyone succeed
 ---
-# Welcome to Our Community 
+
+
+<div style="text-align: center; padding: 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; margin: 20px 0;">
+    <span style="color: white; font-weight: bold; font-family: 'Poppins', sans-serif; margin-bottom: 20px; font-size: 2.8rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Clean Sorted Efficient</span>
+    <p style="color: #f8f9fa; font-size: 1.3rem; margin-bottom: 30px; font-weight: 300;">
+        <i class="fas fa-check-circle"></i> Solved Papers | 
+        <i class="fas fa-file-signature"></i> Exams | 
+        <i class="fas fa-sticky-note"></i> Structured Notes | 
+        <i class="fas fa-code"></i> Practicals
+    </p>
+</div>
+
+<div style="text-align: center; padding: 20px;">
+    <a href="/JAVA" style="background: #dc3545; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">JAVA (CP 215)</a>
+    <a href="/LINUX" style="background: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">LINUX (CP 211)</a>
+    <a href="/DSA" style="background: #6f42c1; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">DSA (CP 213)</a>
+    <a href="/DATABASE" style="background: #fd7e14; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">DBMS (CP 224)</a>
+    <a href="/OS" style="background: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">OS (CP 226)</a>
+</div>
+
+
+----
+
+
+# Welcome to Our Community 🌱
 
 - This is the right place for you to <span style="color:rgb(0, 176, 80)">study smarter</span> and capture the subject matter as quickly as possible.<br>
 
@@ -18,11 +42,10 @@ description: A structured learning approach to help everyone succeed
 Together, we can make studying easier and more effective. <span style="color:rgb(0, 176, 80)">Let’s Make SR2 Green Again! </span>🌿
 
 > **You will never be Alone in this academic journey. 
-> I have discovered that UNI time is very limited and PASSES very FAST like a shadow.**
 
 ## How You Can Contribute
 
-We believe in sharing knowledge. If you would like to help, here is how:
+>We believe in sharing knowledge. If you would like to help, here is how:
 
 - <span style="color:rgb(0, 176, 80)">Solve an exam</span> paper and submit your solution
 - **Send your work in .txt or Word format**
@@ -33,7 +56,7 @@ We believe in sharing knowledge. If you would like to help, here is how:
 > [!Tip] 
 > Materials should be well typed and Accurate in <span style="color:rgb(255, 255, 0)">.docx</span> or <span style="color:rgb(255, 255, 0)">.txt </span>format. The content should be authentic ie: Created by human. AI is just an assistant.
     
-Every contribution makes this space more valuable for all of us.
+>Every contribution makes this space more valuable for all of us.
 
 ## Stay Connected
 
@@ -44,9 +67,6 @@ Every contribution makes this space more valuable for all of us.
 ✨ This is a community project **for us all, by us all.** Let’s make it meaningful, helpful, and green.
 
 ## Recent Materials
-
-> [!Note]
-> We are just getting Started. Looking Foward to Recieve more valuable content through community Contribution.
 
   STUDY GUIDES
   - [[Study Guide - Conquer the OS (CP 226) Exam with Scheduler Speed]]
@@ -105,12 +125,23 @@ Every contribution makes this space more valuable for all of us.
 - [[LINUX (CP 211) UE 2013-2014 SOLVED]]
 
 
-<span style="color:rgb(0, 176, 80)">UPCOMMING...</span>
 
-
-2. C++ PROGRAMMING
-3. COMPUTER ARCHITECTURE
+###### UPCOMING MINERALS 💎✨
+1. C++ PROGRAMMING
+2. COMPUTER ARCHITECTURE
+3. ALL MATERIALS YOU HAVE EVER THOUGH EG AI & ML, AGENTI etc
 4. <span style="color:rgb(255, 0, 255)">SOLUTIONS FOR ALL THE ABOVE..</span>
-5. <span style="color:rgb(0, 176, 80)">Project 2 : TRUE ENGINEER</span>
-6. <span style="color:rgb(0, 176, 80)">Project 3 : ENGINEERS ARE RICH</span>
-   
+5. <span style="color:rgb(0, 176, 80)">Project 1 : GREEN SR2</span>
+6. <span style="color:rgb(0, 176, 80)">Project 2 : TRUE ENGINEER</span>
+7. <span style="color:rgb(0, 176, 80)">Project 3 : ENGINEERS ARE RICH</span>
+
+
+> [!Note]
+> We are just getting started, looking foward to receive more valuable materials through community contribution.
+
+---
+
+## **Tech Stacks**
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=flat&logo=php&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white) ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white) ![Azure](https://img.shields.io/badge/azure-%230072C6.svg?style=flat&logo=microsoftazure&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white) ![Laravel](https://img.shields.io/badge/laravel-%23FF2D20.svg?style=flat&logo=laravel&logoColor=white) ![Web3.js](https://img.shields.io/badge/web3.js-F16822?style=flat&logo=web3.js&logoColor=white) ![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=flat&logo=bootstrap&logoColor=white) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=flat&logo=apache&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=flat&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=flat&logo=pandas&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=flat&logo=TensorFlow&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white)
+

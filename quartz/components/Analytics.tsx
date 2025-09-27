@@ -8,188 +8,305 @@ const Analytics: QuartzComponent = (props: QuartzComponentProps) => {
       <script
         dangerouslySetInnerHTML={{
           __html: `
-            // ===== ENHANCED ANALYTICS FOR EXAM SITE =====
+            // ===== OPTIMIZED ANALYTICS FOR EXAM RESOURCE SITE =====
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             
-            // Enhanced configuration
+            // Enhanced configuration with custom dimensions
             gtag('config', 'G-STRS3QKF3Y', {
               page_title: document.title,
               page_location: window.location.href,
-              page_path: window.location.pathname,
-              transport_type: 'beacon'
+              transport_type: 'beacon',
+              custom_map: {
+                dimension1: 'content_type',
+                dimension2: 'course_code', 
+                dimension3: 'resource_category',
+                dimension4: 'exam_year',
+                dimension5: 'user_journey'
+              }
             });
 
-            // ===== SMART COURSE DETECTION =====
-            function detectCourseAndTrack() {
+            // ===== IMPROVED COURSE DETECTION =====
+            function getCurrentCourse() {
+              const path = window.location.pathname.toLowerCase();
+              const title = document.title.toLowerCase();
+              
+              // Resource hub detection
+              if (path === '/java' || title.includes('java resources')) 
+                return { code: 'CP215', name: 'JAVA', type: 'resource_hub' };
+              if (path === '/linux' || title.includes('linux resources')) 
+                return { code: 'CP211', name: 'LINUX', type: 'resource_hub' };
+              if (path === '/dsa' || title.includes('dsa resources')) 
+                return { code: 'CP213', name: 'DSA', type: 'resource_hub' };
+              if (path === '/database' || title.includes('database resources')) 
+                return { code: 'CP224', name: 'DATABASE', type: 'resource_hub' };
+              if (path === '/os' || title.includes('os resources')) 
+                return { code: 'CP226', name: 'OS', type: 'resource_hub' };
+              
+              // Exam paper detection
+              if (title.includes('cp215') || title.includes('java')) 
+                return { code: 'CP215', name: 'JAVA', type: 'exam_paper' };
+              if (title.includes('cp211') || title.includes('linux')) 
+                return { code: 'CP211', name: 'LINUX', type: 'exam_paper' };
+              if (title.includes('cp213') || title.includes('dsa')) 
+                return { code: 'CP213', name: 'DSA', type: 'exam_paper' };
+              if (title.includes('cp224') || title.includes('database')) 
+                return { code: 'CP224', name: 'DATABASE', type: 'exam_paper' };
+              if (title.includes('cp226') || title.includes('operating system')) 
+                return { code: 'CP226', name: 'OS', type: 'exam_paper' };
+              
+              // Study guide detection
+              if (title.includes('study guide')) 
+                return { code: 'GUIDE', name: 'Study Guide', type: 'learning_path' };
+              
+              return { code: 'OTHER', name: 'Other', type: 'unknown' };
+            }
+
+            // ===== RESOURCE TYPE DETECTION =====
+            function getResourceType() {
+              const title = document.title.toLowerCase();
               const path = window.location.pathname;
-              const title = document.title;
               
-              // Detect specific courses
-              if (/CP215|JAVA/i.test(path + title)) {
-                gtag('event', 'course_view', {
-                  course_code: 'CP215',
-                  course_name: 'JAVA Programming',
-                  academic_year: title.match(/(\\\\d{4})[-–](\\\\d{4})/)?.[0] || 'unknown'
-                });
-                return 'JAVA_CP215';
-              }
+              if (title.includes('study guide')) return 'study_guide';
+              if (title.includes('ue') || title.includes('exam')) return 'exam_paper';
+              if (title.includes('solved')) return 'solved_paper';
+              if (title.includes('test')) return 'test_paper';
+              if (path === '/') return 'homepage';
+              if (['/java','/linux','/dsa','/database','/os'].includes(path)) return 'resource_hub';
               
-              if (/CP226|OS|Operating/i.test(path + title)) {
-                gtag('event', 'course_view', {
-                  course_code: 'CP226', 
-                  course_name: 'Operating Systems',
-                  academic_year: title.match(/(\\\\d{4})[-–](\\\\d{4})/)?.[0] || 'unknown'
-                });
-                return 'OS_CP226';
-              }
-              
-              if (/CP224|DATABASE|DBMS/i.test(path + title)) {
-                gtag('event', 'course_view', {
-                  course_code: 'CP224',
-                  course_name: 'Database Management',
-                  academic_year: title.match(/(\\\\d{4})[-–](\\\\d{4})/)?.[0] || 'unknown'
-                });
-                return 'DBMS_CP224';
-              }
-              
-              if (/CP213|DSA|DATA.STRUCT/i.test(path + title)) {
-                gtag('event', 'course_view', {
-                  course_code: 'CP213',
-                  course_name: 'Data Structures & Algorithms',
-                  academic_year: title.match(/(\\\\d{4})[-–](\\\\d{4})/)?.[0] || 'unknown'
-                });
-                return 'DSA_CP213';
-              }
-              
-              return 'OTHER';
+              return 'content_page';
             }
 
-            // ===== EXAM-SPECIFIC TRACKING =====
-            function trackExamEngagement() {
-              const isExamContent = /exam|question|test|paper|UE|SUP/i.test(document.title);
-              if (isExamContent) {
-                gtag('event', 'exam_content_view', {
-                  content_type: 'exam_paper',
-                  page_title: document.title.substring(0, 100),
-                  timestamp: new Date().toISOString()
+            // ===== ENHANCED PAGE VIEW TRACKING =====
+            function trackEnhancedPageView() {
+              const course = getCurrentCourse();
+              const resourceType = getResourceType();
+              const examYear = document.title.match(/(\\d{4})[-–](\\d{4})/)?.[0] || 'unknown';
+              
+              gtag('event', 'page_view_enhanced', {
+                content_type: resourceType,
+                course_code: course.code,
+                resource_category: course.type,
+                exam_year: examYear,
+                page_title: document.title.substring(0, 100),
+                word_count: document.body.textContent?.length || 0
+              });
+            }
+
+            // ===== NAVIGATION PATH TRACKING =====
+            let userJourney = [];
+            let lastPage = '';
+            
+            function trackNavigationPath() {
+              const currentPage = window.location.pathname;
+              if (currentPage !== lastPage) {
+                userJourney.push({
+                  page: currentPage,
+                  title: document.title,
+                  timestamp: Date.now(),
+                  time_spent: lastPage ? Date.now() - (userJourney[userJourney.length-1]?.timestamp || Date.now()) : 0
+                });
+                
+                // Keep only last 10 pages to avoid memory issues
+                if (userJourney.length > 10) userJourney.shift();
+                
+                lastPage = currentPage;
+                
+                gtag('event', 'navigation_step', {
+                  current_page: currentPage,
+                  journey_length: userJourney.length,
+                  previous_page: userJourney.length > 1 ? userJourney[userJourney.length-2]?.page : 'entry'
                 });
               }
             }
 
-            // ===== DOWNLOAD TRACKING =====
-            function setupDownloadTracking() {
+            // ===== SUBJECT NAVIGATION TRACKING =====
+            function trackSubjectClicks() {
               document.addEventListener('click', function(e) {
                 const link = e.target.closest('a');
-                if (link && link.href) {
-                  // Track study material downloads
-                  if (link.href.match(/\\\\.(pdf|docx|txt)$/i)) {
-                    gtag('event', 'study_material_download', {
-                      file_type: link.href.split('.').pop(),
-                      file_name: link.href.split('/').pop()?.substring(0, 50),
-                      course: detectCourseAndTrack()
-                    });
-                  }
+                if (!link || !link.href) return;
+                
+                const href = link.href.toLowerCase();
+                const linkText = link.textContent.toLowerCase();
+                
+                // Track subject hub clicks from navigation
+                if (href.includes('/java') || href.includes('/linux') || href.includes('/dsa') || 
+                    href.includes('/database') || href.includes('/os')) {
+                  
+                  const subject = href.split('/').pop() || 'unknown';
+                  gtag('event', 'subject_navigation', {
+                    event_category: 'main_nav',
+                    event_label: subject.toUpperCase(),
+                    source_page: window.location.pathname,
+                    navigation_type: 'subject_hub'
+                  });
+                }
+                
+                // Track study guide clicks
+                if (linkText.includes('study guide')) {
+                  gtag('event', 'study_guide_click', {
+                    event_category: 'learning_path',
+                    event_label: link.textContent.trim(),
+                    guide_topic: link.textContent.replace('Study Guide - ', ''),
+                    source_location: window.location.pathname
+                  });
+                }
+                
+                // Track exam paper clicks from index page
+                if (linkText.includes('ue') || linkText.includes('exam')) {
+                  const yearMatch = link.textContent.match(/(\\d{4})[-–](\\d{4})/);
+                  gtag('event', 'exam_paper_click', {
+                    event_category: 'content_access',
+                    event_label: link.textContent.trim(),
+                    exam_year: yearMatch?.[0] || 'unknown',
+                    source: 'index_page'
+                  });
+                }
+                
+                // Track solved paper indicators
+                if (linkText.includes('solved')) {
+                  gtag('event', 'solved_content_click', {
+                    event_category: 'content_preference',
+                    event_label: 'solved_paper',
+                    subject: getCurrentCourse().name
+                  });
                 }
               });
             }
 
-            // ===== ENGAGEMENT TRACKING =====
-            function trackEngagement() {
-              // Scroll depth tracking
+            // ===== CONTENT ENGAGEMENT TRACKING =====
+            function trackContentEngagement() {
               let maxScroll = 0;
+              let readStartTime = Date.now();
+              let scrollTimeout;
+              
+              // Scroll depth with debouncing
               window.addEventListener('scroll', function() {
-                const depth = Math.round((window.scrollY / document.body.scrollHeight) * 100);
-                if (depth > maxScroll && depth % 25 === 0) {
-                  maxScroll = depth;
-                  gtag('event', 'scroll_depth', {
-                    depth_percentage: depth,
-                    course: detectCourseAndTrack()
-                  });
-                }
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                  const depth = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+                  if (depth > maxScroll) {
+                    maxScroll = depth;
+                    
+                    if (depth % 25 === 0) { // Report at 25%, 50%, 75%, 100%
+                      gtag('event', 'scroll_depth', {
+                        event_category: 'engagement',
+                        event_label: getCurrentCourse().name,
+                        depth_percentage: depth,
+                        content_type: getResourceType(),
+                        time_to_depth: Date.now() - readStartTime
+                      });
+                    }
+                  }
+                }, 150);
               }, { passive: true });
-
+              
               // Time-based engagement
-              let engageCheck = setTimeout(() => {
-                gtag('event', 'page_engagement', {
-                  engagement_time: 30,
-                  page_path: window.location.pathname
+              const timeIntervals = [10, 30, 60, 120]; // seconds
+              timeIntervals.forEach(seconds => {
+                setTimeout(() => {
+                  gtag('event', 'time_engagement', {
+                    event_category: 'engagement',
+                    event_label: 'time_on_page',
+                    engagement_seconds: seconds,
+                    content_type: getResourceType(),
+                    course: getCurrentCourse().code
+                  });
+                }, seconds * 1000);
+              });
+            }
+
+            // ===== RESOURCE PREFERENCE ANALYSIS =====
+            function trackResourcePreferences() {
+              // Track which resource types users access most
+              const course = getCurrentCourse();
+              if (course.type === 'resource_hub') {
+                gtag('event', 'resource_hub_visit', {
+                  event_category: 'content_strategy',
+                  event_label: course.name,
+                  hub_type: 'subject_resource_center'
                 });
-              }, 30000);
+              }
+              
+              // Track if users prefer direct exam access vs hub navigation
+              const cameFromIndex = document.referrer.includes(window.location.origin) && 
+                                  new URL(document.referrer).pathname === '/';
+              
+              if (cameFromIndex) {
+                gtag('event', 'direct_exam_access', {
+                  event_category: 'user_behavior',
+                  event_label: 'index_to_exam_direct',
+                  subject: course.name
+                });
+              }
+            }
+
+            // ===== PERFORMANCE OPTIMIZATIONS =====
+            function optimizeAnalytics() {
+              // Use beacon for final event
+              window.addEventListener('beforeunload', function() {
+                const sessionSummary = {
+                  event: 'session_summary',
+                  total_pages_visited: userJourney.length,
+                  session_duration: Date.now() - (userJourney[0]?.timestamp || Date.now()),
+                  subjects_visited: [...new Set(userJourney.map(p => getCurrentCourse().name))],
+                  final_scroll_depth: maxScroll
+                };
+                
+                if (navigator.sendBeacon) {
+                  const blob = new Blob([JSON.stringify(sessionSummary)], {type: 'application/json'});
+                  navigator.sendBeacon('https://www.google-analytics.com/g/collect', blob);
+                }
+              });
             }
 
             // ===== SPA NAVIGATION SUPPORT =====
             function setupSPATracking() {
               let currentPath = window.location.pathname;
               
-              document.addEventListener('nav', function() {
-                // Only track if path actually changed
+              // Use MutationObserver for Quartz SPA navigation
+              const observer = new MutationObserver(function(mutations) {
                 if (window.location.pathname !== currentPath) {
                   currentPath = window.location.pathname;
                   
-                  // Update page view for SPA
-                  gtag('config', 'G-STRS3QKF3Y', {
-                    page_title: document.title,
-                    page_location: window.location.href,
-                    page_path: window.location.pathname
-                  });
-                  
-                  // Track the navigation
-                  gtag('event', 'page_view', {
-                    page_title: document.title,
-                    page_location: window.location.href
-                  });
-                  
-                  // Track course and exam data for new page
+                  // Small delay for DOM update
                   setTimeout(() => {
-                    detectCourseAndTrack();
-                    trackExamEngagement();
+                    trackEnhancedPageView();
+                    trackNavigationPath();
+                    trackResourcePreferences();
                   }, 100);
                 }
               });
-            }
-
-            // ===== PERFORMANCE OPTIMIZATIONS =====
-            function optimizeTracking() {
-              // Use beacon API for better performance
-              if (navigator.sendBeacon) {
-                window.addEventListener('beforeunload', function() {
-                  const sessionData = new Blob([
-                    JSON.stringify({
-                      event: 'session_end',
-                      timestamp: new Date().toISOString(),
-                      course: detectCourseAndTrack()
-                    })
-                  ], { type: 'application/json' });
-                  
-                  navigator.sendBeacon('https://www.google-analytics.com/g/collect', sessionData);
-                });
-              }
-
-              // Device and connection info
-              if (navigator.connection) {
-                gtag('event', 'device_info', {
-                  effective_connection: navigator.connection.effectiveType,
-                  device_memory: navigator.deviceMemory || 'unknown',
-                  is_mobile: /Mobi|Android/i.test(navigator.userAgent)
-                });
-              }
+              
+              observer.observe(document.body, { 
+                childList: true, 
+                subtree: true,
+                attributes: true,
+                attributeFilter: ['class', 'id']
+              });
             }
 
             // ===== INITIALIZATION =====
             function initEnhancedAnalytics() {
-              console.log('🎯 Enhanced Exam Analytics Initialized');
+              console.log('🎯 Enhanced Exam Analytics Initialized - Tracking Resource Preferences');
               
-              // Initial tracking
-              detectCourseAndTrack();
-              trackExamEngagement();
+              // Initial page load tracking
+              trackEnhancedPageView();
+              trackNavigationPath();
+              trackResourcePreferences();
               
               // Setup event listeners
-              setupDownloadTracking();
+              trackSubjectClicks();
+              trackContentEngagement();
               setupSPATracking();
-              trackEngagement();
-              optimizeTracking();
+              optimizeAnalytics();
+              
+              // Community engagement tracking
+              gtag('event', 'community_visit', {
+                event_category: 'engagement',
+                event_label: 'exam_resource_community'
+              });
             }
 
             // Start analytics
@@ -199,20 +316,12 @@ const Analytics: QuartzComponent = (props: QuartzComponentProps) => {
               initEnhancedAnalytics();
             }
 
-            console.log('✅ Enhanced Analytics Loaded for G-STRS3QKF3Y');
+            console.log('✅ Enhanced Resource Analytics Loaded - Tracking Subject Hubs vs Direct Access');
           `,
         }}
       />
     </>
   )
 }
-
-// Optional: Add CSS if needed for any analytics UI elements
-Analytics.css = `
-.analytics-debug {
-  display: none;
-}
-/* Add any analytics-related styles here */
-`
 
 export default (() => Analytics) satisfies QuartzComponentConstructor
