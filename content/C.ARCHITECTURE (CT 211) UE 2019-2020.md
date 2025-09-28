@@ -5,9 +5,9 @@ THE UNIVERSITY OF DODOMA
 COLLEGE OF INFORMATICS AND VIRTUAL EDUCATION
 DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
 FIRST SEMESTER 2019/2020
-CN 210: COMPUTER ARCHITECTURE AND ORGANIZATION
-Date: 26th February, 2020"
-Time: 15:30 PM - 18:30 PM (3 Hours)
+**Course Name :** CN 210 COMPUTER ARCHITECTURE AND ORGANIZATION
+**Date :** 26th February, 2020"
+**Time :** 15:30 PM - 18:30 PM (3 Hours)
 
 
 instructions: 
@@ -27,8 +27,7 @@ instructions:
 **b)** List and briefly define the main structural components of a process:  
 **[4 Marks]**
 
-**c)** While browsing at Nyahongo’s computer store, you overhear a customer asking Mr. Nyahongo what is the fastest computer in the store that he can buy. Mr. Nyahongo replies, “You’re looking at our Macintosies. The fastest Mac we have runs at a clock speed of 1.2 gigahertz. If you really want the fastest machine, you should buy our 2.4-gigahertz Intel Pentium IV install.”  
-Is Mr. Nyahongo correct? What would you say to help this customer?  
+**c)** While browsing at Nyahongo’s computer store, you overhear a customer asking Mr. Nyahongo what is the fastest computer in the store that he can buy. Mr. Nyahongo replies, “You’re looking at our Macintosies. The fastest Mac we have runs at a clock speed of 1.2 gigahertz. If you really want the fastest machine, you should buy our 2.4-gigahertz Intel Pentium IV install.” Is Mr. Nyahongo correct? What would you say to help this customer?  
 **[7 Marks]**
 
 ---
@@ -52,7 +51,7 @@ Is Mr. Nyahongo correct? What would you say to help this customer?
 
 ---
 
-## Question Three
+### Question Three
 
 **a)** Considering the transfers over the address and data lines in order to execute various instructions, explain what is meant by the “von Neumann bottleneck”  
 **[5 Marks]**
@@ -68,7 +67,7 @@ Is Mr. Nyahongo correct? What would you say to help this customer?
 
 ---
 
-## Question Four
+### Question Four
 
 **a)** Simplify the following functional expressions using Boolean algebra and its identities. List the identity used at each step.  
 **[2 Marks Each]**
@@ -150,20 +149,12 @@ $$\begin{align*}
 
 **d)** Suppose we have instruction LDA 800. Given memory as follows:
 
-| Address | Content |
-| :-----: | :-----: |
-|   800   |   900   |
-|   ...   |   900   |
-|   ...   |  1000   |
-|   ...   |  1000   |
-|   ...   |   500   |
-|   ...   |  1100   |
-|   ...   |   600   |
-|   ...   |  1200   |
+![[Pasted image 20250928104243.png]]
+
 
 What would be loaded into the AC if the addressing mode for the instruction is:  
 **[2 Marks Each]**
 
--   **i.** Immediate ______
--   **ii.** Direct ______
--   **iii.** Indirect ______
+-   **i.** Immediate `______`
+-   **ii.** Direct `______`
+-   **iii.** Indirect `______`

@@ -42,6 +42,7 @@ See the Linux Learning Path that will guide you step by step from beginner to po
 (<span style="color:rgb(255, 255, 0)">Click the links below</span>)
 
 LINUX/UNIX  SYSTEMS
+- [[LINUX (CP 211) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 - [[LINUX (CP 211) UE 2022-2023]]
 - [[LINUX (CP 211) UE 2022-2023 SOLVED]]
 - [[LINUX (CP 211) UE 2021-2022 SOLVED]]

@@ -20,11 +20,16 @@ description: A structured learning approach to help everyone succeed
     <a href="/DSA" style="background: #6f42c1; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">DSA (CP 213)</a>
     <a href="/DATABASE" style="background: #fd7e14; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">DBMS (CP 224)</a>
     <a href="/OS" style="background: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">OS (CP 226)</a>
+    <a href="/MOREMINERALS" style="background: #dc3545; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">NEXT👉</a>
 </div>
 
 
 ----
 
+###### **TRENDING NOW**
+- [[JAVA (CP 215) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
+- [[LINUX (CP 211) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
+- [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 
 # Welcome to Our Community 🌱
 
@@ -76,14 +81,15 @@ Together, we can make studying easier and more effective. <span style="color:rgb
   - [[Study Guide - Conquer the Database (CP 224) Exam like a Data Architect]]
   
 
-1. OPERATING SYSTEMS
+OPERATING SYSTEMS
 - [[OS (CP 226) UE 2022-2023]]
 - [[OS (CP 226) UE 2021-2022]]
 - [[OS (CP 226) UE 2020-2021]]
 - [[OS (CP 226) UE 2019-2020]]
 - [[OS (CP 226) UE 2018-2019]]
 
-2. ADVANCED DBMS
+ADVANCED DBMS
+- [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]]  ✨✨
 - [[DATABASE (CP 224) UE 2023-2024]]
 - [[DATABASE (CP 224) UE 2022-2023]]
 - [[DATABASE (CP 224) UE 2021-2022]]
@@ -93,7 +99,7 @@ Together, we can make studying easier and more effective. <span style="color:rgb
 - [[DATABASE (CP 224) TEST-1 2017-2018]]
 
 
-3. DATA STRUCTURES AND ALGO
+DATA STRUCTURES AND ALGO
 - [[DSA (CP 213) UE 2023-2024]]
 - [[DSA (CP 213) UE 2021-2022]]
 - [[DSA (CP 213) UE 2020-2021]]
@@ -102,7 +108,8 @@ Together, we can make studying easier and more effective. <span style="color:rgb
 - [[DSA (CP 213) UE 2016-2017]]
 
 
-4. JAVA PROGRAMMING
+JAVA PROGRAMMING
+[[JAVA (CP 215) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨✨
 - [[JAVA (CP 215) UE 2023-2024]]
 - [[JAVA (CP 215) UE 2022-2023]]
 - [[JAVA (CP 215) UE 2021-2022]]
@@ -115,7 +122,8 @@ Together, we can make studying easier and more effective. <span style="color:rgb
 - [[JAVA (CP 215) UE 2014-2015]]
 - [[JAVA (CP 215) UE 2013-2014]]
 
-5. LINUX  AND UNIX : <span style="color:rgb(255, 0, 255)">NEW</span>
+LINUX  AND UNIX : 
+- [[LINUX (CP 211) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨✨
 - [[LINUX (CP 211) UE 2022-2023]]
 - [[LINUX (CP 211) UE 2022-2023 SOLVED]]
 - [[LINUX (CP 211) UE 2021-2022 SOLVED]]
@@ -125,15 +133,22 @@ Together, we can make studying easier and more effective. <span style="color:rgb
 - [[LINUX (CP 211) UE 2013-2014 SOLVED]]
 
 
+COMPUTER ARCHITECTURE AND ORGANIZATION  (<span style="color:rgb(255, 0, 255)">BRAN NEW</span>   ✨✨✨✨) 
+- [[C.ARCHITECTURE (CT 211) UE 2023-2024 SOLVED INTERACTIVE]]
+- [[C.ARCHITECTURE (CT 211) UE 2019-2020]]
+- [[C.ARCHITECTURE (CT 211) UE 2018-2019]]
+- [[C.ARCHITECTURE (CT 211) UE 2017-2018]]
+- [[C.ARCHITECTURE (CT 211) TEST1 2018-2019]]
+- [[C.ARCHITECTURE (CT 211) TEST2 2018-2019]]
+
 
 ###### UPCOMING MINERALS 💎✨
 1. C++ PROGRAMMING
-2. COMPUTER ARCHITECTURE
-3. ALL MATERIALS YOU HAVE EVER THOUGH EG AI & ML, AGENTI etc
-4. <span style="color:rgb(255, 0, 255)">SOLUTIONS FOR ALL THE ABOVE..</span>
-5. <span style="color:rgb(0, 176, 80)">Project 1 : GREEN SR2</span>
-6. <span style="color:rgb(0, 176, 80)">Project 2 : TRUE ENGINEER</span>
-7. <span style="color:rgb(0, 176, 80)">Project 3 : ENGINEERS ARE RICH</span>
+2. ALL MATERIALS YOU HAVE EVER THOUGH EG AI & ML, AGENTI etc
+3. <span style="color:rgb(255, 0, 255)">SOLUTIONS FOR ALL THE ABOVE..</span>
+4. <span style="color:rgb(0, 176, 80)">Project 1 : GREEN SR2</span>
+5. <span style="color:rgb(0, 176, 80)">Project 2 : TRUE ENGINEER</span>
+6. <span style="color:rgb(0, 176, 80)">Project 3 : ENGINEERS ARE RICH</span>
 
 
 > [!Note]

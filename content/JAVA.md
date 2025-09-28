@@ -41,6 +41,7 @@ See the Java Study Guide that will direct you step by step on how to learn Java.
 (<span style="color:rgb(255, 255, 0)">Click the links below</span>)
 
 JAVA PROGRAMMING RESOURCES
+- [[JAVA (CP 215) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 - [[JAVA (CP 215) UE 2023-2024]]
 - [[JAVA (CP 215) UE 2022-2023]]
 - [[JAVA (CP 215) UE 2021-2022]]

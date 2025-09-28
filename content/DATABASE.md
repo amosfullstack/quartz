@@ -44,6 +44,7 @@ cssclasses: resource-hub, database-resources
 (<span style="color:rgb(255, 255, 0)">Click the links below</span>)
 
 ADVANCED DBMS
+- [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 - [[DATABASE (CP 224) UE 2023-2024]]
 - [[DATABASE (CP 224) UE 2022-2023]]
 - [[DATABASE (CP 224) UE 2021-2022]]
