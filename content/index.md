@@ -30,6 +30,7 @@ description: A structured learning approach to help everyone succeed
 - [[JAVA (CP 215) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 - [[LINUX (CP 211) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 - [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
+- [[C.NETWORKING]]  (**FIRST YEAR**)  <span style="color:rgb(255, 0, 255)">NEW</span>
 
 # Welcome to Our Community 🌱
 
