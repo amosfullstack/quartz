@@ -1,5 +1,5 @@
 ---
-title: SMARTER✨ AND FASTER⚡
+title: SMARTER✨, FASTER⚡
 description: A structured learning approach to help everyone succeed
 ---
 
