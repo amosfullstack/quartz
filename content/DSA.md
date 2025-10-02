@@ -5,11 +5,8 @@
 See the DSA Study Guide that will direct you step by step on how to master algorithms and data structures.
 - [[Study Guide - Pass the DSA (CP 213) Exam Like a  Ninja]]
 
-
-(<span style="color:rgb(255, 255, 0)">Click the links below</span>)
-
-DATA STRUCTURES AND ALGORITHMS
-
+###### DATA STRUCTURES AND ALGORITHMS RESOURCES
+(*Click the links below*)
 - [[DSA (CP 213) UE 2023-2024]]
 - [[DSA (CP 213) UE 2021-2022]]
 - [[DSA (CP 213) UE 2020-2021]]

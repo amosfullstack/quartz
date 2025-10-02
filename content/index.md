@@ -1,5 +1,5 @@
 ---
-title: MGODI | LEARNING AS ONE ✨
+title: SMARTER✨ & FASTER⚡
 description: A structured learning approach to help everyone succeed
 ---
 
@@ -27,13 +27,12 @@ description: A structured learning approach to help everyone succeed
 ----
 
 ###### **TRENDING NOW**
-- [[JAVA (CP 215) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
-- [[LINUX (CP 211) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
+
 - [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 
 ###### UPLOADED TODAY
-- [[C.NETWORKING]]  (**FIRST YEAR NETWORKING RESOURCES**)  <span style="color:rgb(255, 0, 255)">NEW</span>
-- [[CN.PROTOCOLS (CN 211) UE 2016-2017 SOLVED INTERACTIVE]]  <span style="color:rgb(255, 0, 255)">ADDED</span>
+- [[CPP]] (**FIRST YEAR C++ RESOURCES**)  <span style="color:rgb(255, 0, 255)">NEW</span>
+- [[DATABASE1]] (FIRST YEAR INTRO TO DATABASES) <span style="color:rgb(255, 0, 255)">NEW</span>
 
 # Welcome to Our Community 🌱
 
@@ -50,7 +49,7 @@ description: A structured learning approach to help everyone succeed
 
 Together, we can make studying easier and more effective. <span style="color:rgb(0, 176, 80)">Let’s Make SR2 Green Again! </span>🌿
 
-> **You will never be Alone in this academic journey. 
+> **You will never be Alone in this academic journey.** 
 
 ## How You Can Contribute
 
@@ -113,7 +112,7 @@ DATA STRUCTURES AND ALGO
 
 
 JAVA PROGRAMMING
-[[JAVA (CP 215) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨✨
+- [[JAVA (CP 215) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨✨
 - [[JAVA (CP 215) UE 2023-2024]]
 - [[JAVA (CP 215) UE 2022-2023]]
 - [[JAVA (CP 215) UE 2021-2022]]

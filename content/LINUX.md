@@ -39,9 +39,8 @@ cssclasses: resource-hub, linux-resources
 See the Linux Learning Path that will guide you step by step from beginner to power user.
 - [[Study Guide - Conquer the Linux(CP 211) Exam like Jet Li]]
 
-(<span style="color:rgb(255, 255, 0)">Click the links below</span>)
-
-LINUX/UNIX  SYSTEMS
+###### LINUX/UNIX  SYSTEMS RESOURCES
+(*Click the links below*)
 - [[LINUX (CP 211) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 - [[LINUX (CP 211) UE 2022-2023]]
 - [[LINUX (CP 211) UE 2022-2023 SOLVED]]

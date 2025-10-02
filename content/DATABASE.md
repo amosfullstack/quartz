@@ -41,9 +41,8 @@ cssclasses: resource-hub, database-resources
 **Your database adventure starts now:**
 - [[Study Guide - Conquer the Database (CP 224) Exam like a Data Architect]]
 
-(<span style="color:rgb(255, 255, 0)">Click the links below</span>)
-
-ADVANCED DBMS
+###### ADVANCED DBMS RESOURCES
+(*Click the links below*)
 - [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 - [[DATABASE (CP 224) UE 2023-2024]]
 - [[DATABASE (CP 224) UE 2022-2023]]

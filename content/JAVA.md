@@ -38,9 +38,8 @@ cssclasses: resource-hub, java-resources
 See the Java Study Guide that will direct you step by step on how to learn Java.
 - [[Study Guide - Pass Java (CP 215) Exams Like Drinking Water]]
 
-(<span style="color:rgb(255, 255, 0)">Click the links below</span>)
-
-JAVA PROGRAMMING RESOURCES
+###### JAVA PROGRAMMING RESOURCES
+(*Click the links below*)
 - [[JAVA (CP 215) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
 - [[JAVA (CP 215) UE 2023-2024]]
 - [[JAVA (CP 215) UE 2022-2023]]

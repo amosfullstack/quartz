@@ -38,9 +38,8 @@ cssclasses: resource-hub, os-resources
 See the Operating System Study Guide that will direct you step by step on how to understand OS fundamentals.
 - [[Study Guide - Conquer the OS (CP 226) Exam with Scheduler Speed]]
 
-(<span style="color:rgb(255, 255, 0)">Click the links below</span>)
-
-OPERATING SYSTEMS
+###### OPERATING SYSTEMS RESOURCES
+(*Click the links below*)
 - [[OS (CP 226) UE 2022-2023]]
 - [[OS (CP 226) UE 2021-2022]]
 - [[OS (CP 226) UE 2020-2021]]

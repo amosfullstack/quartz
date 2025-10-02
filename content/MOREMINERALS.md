@@ -15,6 +15,8 @@
 
 <div style="text-align: center; padding: 20px;">
     <a href="/C.NETWORKING" style="background: #007bff; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">C.NETWORKING (CN 121)</a>
+     <a href="/DATABASE1" style="background: #fd7e14; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">DBMS1 (CP 121)</a>
+    <a href="/CPP" style="background: #28a745; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; margin: 5px; display: inline-block;">C++ (CP 123)</a>
 </div>
 
 
