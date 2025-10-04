@@ -1,4 +1,4 @@
-// quartz/components/Analytics.tsx
+// components/Analytics.tsx
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 const Analytics: QuartzComponent = (props: QuartzComponentProps) => {
@@ -8,315 +8,359 @@ const Analytics: QuartzComponent = (props: QuartzComponentProps) => {
       <script
         dangerouslySetInnerHTML={{
           __html: `
-            // ===== OPTIMIZED ANALYTICS FOR EXAM RESOURCE SITE =====
+            // ===== UNIVERSAL SUPER ANALYTICS - FUTURE PROOF =====
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             
-            // Enhanced configuration with custom dimensions
+            // Universal configuration
             gtag('config', 'G-STRS3QKF3Y', {
               page_title: document.title,
-              page_location: window.location.href,
+              page_location: location.href,
               transport_type: 'beacon',
               custom_map: {
-                dimension1: 'content_type',
-                dimension2: 'course_code', 
-                dimension3: 'resource_category',
-                dimension4: 'exam_year',
-                dimension5: 'user_journey'
+                dimension1: 'content_category',
+                dimension2: 'academic_level', 
+                dimension3: 'resource_type',
+                dimension4: 'content_freshness',
+                dimension5: 'engagement_tier',
+                dimension6: 'user_journey_stage',
+                dimension7: 'learning_pattern'
               }
             });
 
-            // ===== IMPROVED COURSE DETECTION =====
-            function getCurrentCourse() {
+            // ===== UNIVERSAL CONTEXT DETECTION =====
+            function detectUniversalContext() {
               const path = window.location.pathname.toLowerCase();
               const title = document.title.toLowerCase();
+              const body = document.body;
               
-              // Resource hub detection
-              if (path === '/java' || title.includes('java resources')) 
-                return { code: 'CP215', name: 'JAVA', type: 'resource_hub' };
-              if (path === '/linux' || title.includes('linux resources')) 
-                return { code: 'CP211', name: 'LINUX', type: 'resource_hub' };
-              if (path === '/dsa' || title.includes('dsa resources')) 
-                return { code: 'CP213', name: 'DSA', type: 'resource_hub' };
-              if (path === '/database' || title.includes('database resources')) 
-                return { code: 'CP224', name: 'DATABASE', type: 'resource_hub' };
-              if (path === '/os' || title.includes('os resources')) 
-                return { code: 'CP226', name: 'OS', type: 'resource_hub' };
+              // Auto-detect course codes (CPxxx, CNxxx, CTxxx)
+              const courseCodeMatch = title.match(/(CP|CN|CT)\\s*\\d+/i) || 
+                                    path.match(/(cp|cn|ct)\\s*\\d+/i) ||
+                                    body.textContent.match(/(CP|CN|CT)\\s*\\d{3}/gi);
+              const courseCode = courseCodeMatch ? courseCodeMatch[0].toUpperCase().replace(/\\s/g, '') : 'UNKNOWN';
               
-              // Exam paper detection
-              if (title.includes('cp215') || title.includes('java')) 
-                return { code: 'CP215', name: 'JAVA', type: 'exam_paper' };
-              if (title.includes('cp211') || title.includes('linux')) 
-                return { code: 'CP211', name: 'LINUX', type: 'exam_paper' };
-              if (title.includes('cp213') || title.includes('dsa')) 
-                return { code: 'CP213', name: 'DSA', type: 'exam_paper' };
-              if (title.includes('cp224') || title.includes('database')) 
-                return { code: 'CP224', name: 'DATABASE', type: 'exam_paper' };
-              if (title.includes('cp226') || title.includes('operating system')) 
-                return { code: 'CP226', name: 'OS', type: 'exam_paper' };
+              // Auto-detect academic level from course codes
+              let academicLevel = 'unknown';
+              if (courseCode.match(/CP1\\d{2}|CN1\\d{2}/)) academicLevel = 'first_year';
+              if (courseCode.match(/CP2\\d{2}|CN2\\d{2}|CT2\\d{2}/)) academicLevel = 'second_year';
+              if (courseCode.match(/CP3\\d{2}|CN3\\d{2}/)) academicLevel = 'third_year';
               
-              // Study guide detection
-              if (title.includes('study guide')) 
-                return { code: 'GUIDE', name: 'Study Guide', type: 'learning_path' };
+              // Auto-detect resource type from content patterns
+              let resourceType = 'content_page';
+              const indicators = {
+                exam_paper: ['ue', 'exam', 'paper', 'question', 'assessment'],
+                solved_paper: ['solved', 'solution', 'answer', 'interactive'],
+                study_guide: ['study guide', 'guide', 'conquer', 'pass like'],
+                test_paper: ['test', 'quiz', 'midterm'],
+                resource_hub: ['resource', 'hub', 'materials', 'collection'],
+                practical: ['lab', 'practical', 'exercise', 'implementation']
+              };
               
-              return { code: 'OTHER', name: 'Other', type: 'unknown' };
-            }
-
-            // ===== RESOURCE TYPE DETECTION =====
-            function getResourceType() {
-              const title = document.title.toLowerCase();
-              const path = window.location.pathname;
-              
-              if (title.includes('study guide')) return 'study_guide';
-              if (title.includes('ue') || title.includes('exam')) return 'exam_paper';
-              if (title.includes('solved')) return 'solved_paper';
-              if (title.includes('test')) return 'test_paper';
-              if (path === '/') return 'homepage';
-              if (['/java','/linux','/dsa','/database','/os'].includes(path)) return 'resource_hub';
-              
-              return 'content_page';
-            }
-
-            // ===== ENHANCED PAGE VIEW TRACKING =====
-            function trackEnhancedPageView() {
-              const course = getCurrentCourse();
-              const resourceType = getResourceType();
-              const examYear = document.title.match(/(\\d{4})[-–](\\d{4})/)?.[0] || 'unknown';
-              
-              gtag('event', 'page_view_enhanced', {
-                content_type: resourceType,
-                course_code: course.code,
-                resource_category: course.type,
-                exam_year: examYear,
-                page_title: document.title.substring(0, 100),
-                word_count: document.body.textContent?.length || 0
+              Object.entries(indicators).forEach(([type, keywords]) => {
+                if (keywords.some(keyword => title.includes(keyword) || body.textContent.toLowerCase().includes(keyword))) {
+                  resourceType = type;
+                }
               });
-            }
-
-            // ===== NAVIGATION PATH TRACKING =====
-            let userJourney = [];
-            let lastPage = '';
-            
-            function trackNavigationPath() {
-              const currentPage = window.location.pathname;
-              if (currentPage !== lastPage) {
-                userJourney.push({
-                  page: currentPage,
-                  title: document.title,
-                  timestamp: Date.now(),
-                  time_spent: lastPage ? Date.now() - (userJourney[userJourney.length-1]?.timestamp || Date.now()) : 0
-                });
-                
-                // Keep only last 10 pages to avoid memory issues
-                if (userJourney.length > 10) userJourney.shift();
-                
-                lastPage = currentPage;
-                
-                gtag('event', 'navigation_step', {
-                  current_page: currentPage,
-                  journey_length: userJourney.length,
-                  previous_page: userJourney.length > 1 ? userJourney[userJourney.length-2]?.page : 'entry'
-                });
+              
+              // Auto-detect freshness
+              let freshness = 'archive';
+              const currentYear = new Date().getFullYear();
+              const yearMatch = title.match(/\\b(20\\d{2})[-–](20\\d{2})\\b/);
+              if (yearMatch) {
+                const endYear = parseInt(yearMatch[2]);
+                freshness = endYear >= currentYear - 1 ? 'current' : 'archive';
               }
-            }
-
-            // ===== SUBJECT NAVIGATION TRACKING =====
-            function trackSubjectClicks() {
-              document.addEventListener('click', function(e) {
-                const link = e.target.closest('a');
-                if (!link || !link.href) return;
-                
-                const href = link.href.toLowerCase();
-                const linkText = link.textContent.toLowerCase();
-                
-                // Track subject hub clicks from navigation
-                if (href.includes('/java') || href.includes('/linux') || href.includes('/dsa') || 
-                    href.includes('/database') || href.includes('/os')) {
-                  
-                  const subject = href.split('/').pop() || 'unknown';
-                  gtag('event', 'subject_navigation', {
-                    event_category: 'main_nav',
-                    event_label: subject.toUpperCase(),
-                    source_page: window.location.pathname,
-                    navigation_type: 'subject_hub'
-                  });
-                }
-                
-                // Track study guide clicks
-                if (linkText.includes('study guide')) {
-                  gtag('event', 'study_guide_click', {
-                    event_category: 'learning_path',
-                    event_label: link.textContent.trim(),
-                    guide_topic: link.textContent.replace('Study Guide - ', ''),
-                    source_location: window.location.pathname
-                  });
-                }
-                
-                // Track exam paper clicks from index page
-                if (linkText.includes('ue') || linkText.includes('exam')) {
-                  const yearMatch = link.textContent.match(/(\\d{4})[-–](\\d{4})/);
-                  gtag('event', 'exam_paper_click', {
-                    event_category: 'content_access',
-                    event_label: link.textContent.trim(),
-                    exam_year: yearMatch?.[0] || 'unknown',
-                    source: 'index_page'
-                  });
-                }
-                
-                // Track solved paper indicators
-                if (linkText.includes('solved')) {
-                  gtag('event', 'solved_content_click', {
-                    event_category: 'content_preference',
-                    event_label: 'solved_paper',
-                    subject: getCurrentCourse().name
-                  });
-                }
-              });
-            }
-
-            // ===== CONTENT ENGAGEMENT TRACKING =====
-            function trackContentEngagement() {
-              let maxScroll = 0;
-              let readStartTime = Date.now();
-              let scrollTimeout;
               
-              // Scroll depth with debouncing
+              // Auto-detect popularity markers
+              const isHot = /🔥|hot|trending|popular/i.test(title + body.textContent);
+              const isNew = /✨|new|recent|just added|uploaded/i.test(title + body.textContent);
+              
+              return {
+                courseCode,
+                academicLevel,
+                resourceType,
+                freshness,
+                isHot,
+                isNew,
+                path,
+                title: document.title
+              };
+            }
+
+            // ===== UNIVERSAL EVENT CAPTURE =====
+            function initUniversalEventCapture() {
+              const events = {
+                navigation: 0,
+                content_access: 0,
+                interaction: 0,
+                download: 0,
+                engagement: 0
+              };
+              
+              let sessionMetrics = {
+                startTime: Date.now(),
+                pagesVisited: new Set([location.pathname]),
+                coursesAccessed: new Set(),
+                maxScrollDepth: 0,
+                activeTime: 0,
+                lastActivity: Date.now()
+              };
+
+              // Capture ALL clicks with intelligent classification
+              document.addEventListener('click', function(e) {
+                const target = e.target;
+                const context = detectUniversalContext();
+                
+                // Universal link classification
+                if (target.closest('a') && target.href) {
+                  events.navigation++;
+                  const linkType = classifyLink(target);
+                  
+                  gtag('event', 'universal_navigation', {
+                    event_category: 'navigation',
+                    event_label: linkType,
+                    link_text: target.textContent?.substring(0, 100) || 'unknown',
+                    link_destination: target.href,
+                    source_context: context.resourceType,
+                    navigation_count: events.navigation
+                  });
+                  
+                  // Track course discoveries
+                  const targetContext = extractContextFromURL(target.href);
+                  if (targetContext.courseCode !== 'UNKNOWN') {
+                    sessionMetrics.coursesAccessed.add(targetContext.courseCode);
+                  }
+                }
+                
+                // Universal content interactions
+                if (isInteractiveElement(target)) {
+                  events.interaction++;
+                  const interactionType = classifyInteraction(target);
+                  
+                  gtag('event', 'universal_interaction', {
+                    event_category: 'engagement',
+                    event_label: interactionType,
+                    element_type: target.tagName,
+                    interaction_count: events.interaction,
+                    course_context: context.courseCode
+                  });
+                }
+                
+                sessionMetrics.lastActivity = Date.now();
+              }, true);
+
+              // Universal scroll tracking
+              let scrollTimeout;
               window.addEventListener('scroll', function() {
                 clearTimeout(scrollTimeout);
                 scrollTimeout = setTimeout(() => {
                   const depth = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
-                  if (depth > maxScroll) {
-                    maxScroll = depth;
+                  if (depth > sessionMetrics.maxScrollDepth) {
+                    sessionMetrics.maxScrollDepth = depth;
                     
-                    if (depth % 25 === 0) { // Report at 25%, 50%, 75%, 100%
-                      gtag('event', 'scroll_depth', {
+                    // Auto-detect reading milestones
+                    if ([25, 50, 75, 90, 95, 100].includes(depth)) {
+                      events.engagement++;
+                      const context = detectUniversalContext();
+                      
+                      gtag('event', 'universal_reading_milestone', {
                         event_category: 'engagement',
-                        event_label: getCurrentCourse().name,
+                        event_label: 'scroll_depth',
                         depth_percentage: depth,
-                        content_type: getResourceType(),
-                        time_to_depth: Date.now() - readStartTime
+                        content_type: context.resourceType,
+                        milestone_count: events.engagement,
+                        time_to_milestone: Date.now() - sessionMetrics.startTime
                       });
                     }
                   }
-                }, 150);
+                }, 200);
               }, { passive: true });
-              
-              // Time-based engagement
-              const timeIntervals = [10, 30, 60, 120]; // seconds
-              timeIntervals.forEach(seconds => {
+
+              // Universal time tracking
+              const timeMilestones = [10, 30, 60, 120, 300, 600, 1800];
+              timeMilestones.forEach(seconds => {
                 setTimeout(() => {
-                  gtag('event', 'time_engagement', {
+                  const context = detectUniversalContext();
+                  events.engagement++;
+                  
+                  gtag('event', 'universal_time_milestone', {
                     event_category: 'engagement',
-                    event_label: 'time_on_page',
-                    engagement_seconds: seconds,
-                    content_type: getResourceType(),
-                    course: getCurrentCourse().code
+                    event_label: 'time_engagement',
+                    seconds_engaged: seconds,
+                    content_category: context.resourceType,
+                    academic_level: context.academicLevel,
+                    engagement_score: calculateEngagementScore(sessionMetrics, events)
                   });
                 }, seconds * 1000);
               });
-            }
 
-            // ===== RESOURCE PREFERENCE ANALYSIS =====
-            function trackResourcePreferences() {
-              // Track which resource types users access most
-              const course = getCurrentCourse();
-              if (course.type === 'resource_hub') {
-                gtag('event', 'resource_hub_visit', {
-                  event_category: 'content_strategy',
-                  event_label: course.name,
-                  hub_type: 'subject_resource_center'
-                });
-              }
-              
-              // Track if users prefer direct exam access vs hub navigation
-              const cameFromIndex = document.referrer.includes(window.location.origin) && 
-                                  new URL(document.referrer).pathname === '/';
-              
-              if (cameFromIndex) {
-                gtag('event', 'direct_exam_access', {
-                  event_category: 'user_behavior',
-                  event_label: 'index_to_exam_direct',
-                  subject: course.name
-                });
-              }
-            }
-
-            // ===== PERFORMANCE OPTIMIZATIONS =====
-            function optimizeAnalytics() {
-              // Use beacon for final event
+              // Universal session analytics
               window.addEventListener('beforeunload', function() {
-                const sessionSummary = {
-                  event: 'session_summary',
-                  total_pages_visited: userJourney.length,
-                  session_duration: Date.now() - (userJourney[0]?.timestamp || Date.now()),
-                  subjects_visited: [...new Set(userJourney.map(p => getCurrentCourse().name))],
-                  final_scroll_depth: maxScroll
-                };
+                const context = detectUniversalContext();
+                const sessionDuration = Date.now() - sessionMetrics.startTime;
+                sessionMetrics.activeTime = Date.now() - sessionMetrics.lastActivity;
                 
-                if (navigator.sendBeacon) {
-                  const blob = new Blob([JSON.stringify(sessionSummary)], {type: 'application/json'});
-                  navigator.sendBeacon('https://www.google-analytics.com/g/collect', blob);
-                }
+                gtag('event', 'universal_session_summary', {
+                  event_category: 'analytics',
+                  event_label: 'session_complete',
+                  session_duration: sessionDuration,
+                  active_engagement: sessionMetrics.activeTime,
+                  pages_visited: sessionMetrics.pagesVisited.size,
+                  courses_accessed: Array.from(sessionMetrics.coursesAccessed),
+                  max_scroll_depth: sessionMetrics.maxScrollDepth,
+                  total_interactions: Object.values(events).reduce((a, b) => a + b, 0),
+                  engagement_score: calculateEngagementScore(sessionMetrics, events),
+                  learning_pattern: detectLearningPattern(sessionMetrics),
+                  user_journey_stage: assessJourneyStage(sessionMetrics)
+                });
               });
-            }
 
-            // ===== SPA NAVIGATION SUPPORT =====
-            function setupSPATracking() {
-              let currentPath = window.location.pathname;
-              
-              // Use MutationObserver for Quartz SPA navigation
-              const observer = new MutationObserver(function(mutations) {
-                if (window.location.pathname !== currentPath) {
-                  currentPath = window.location.pathname;
+              // SPA navigation support
+              let currentURL = location.href;
+              const observeNavigation = function() {
+                if (location.href !== currentURL) {
+                  currentURL = location.href;
+                  sessionMetrics.pagesVisited.add(location.pathname);
                   
-                  // Small delay for DOM update
                   setTimeout(() => {
-                    trackEnhancedPageView();
-                    trackNavigationPath();
-                    trackResourcePreferences();
-                  }, 100);
+                    const newContext = detectUniversalContext();
+                    gtag('event', 'universal_page_view', {
+                      content_category: newContext.resourceType,
+                      academic_level: newContext.academicLevel,
+                      resource_type: newContext.resourceType,
+                      content_freshness: newContext.freshness,
+                      is_featured_content: newContext.isHot || newContext.isNew,
+                      course_context: newContext.courseCode,
+                      page_title: newContext.title.substring(0, 150),
+                      word_count: document.body.textContent?.length || 0
+                    });
+                  }, 50);
                 }
-              });
+              };
               
-              observer.observe(document.body, { 
-                childList: true, 
-                subtree: true,
-                attributes: true,
-                attributeFilter: ['class', 'id']
-              });
-            }
-
-            // ===== INITIALIZATION =====
-            function initEnhancedAnalytics() {
-              console.log('🎯 Enhanced Exam Analytics Initialized - Tracking Resource Preferences');
-              
-              // Initial page load tracking
-              trackEnhancedPageView();
-              trackNavigationPath();
-              trackResourcePreferences();
-              
-              // Setup event listeners
-              trackSubjectClicks();
-              trackContentEngagement();
-              setupSPATracking();
-              optimizeAnalytics();
-              
-              // Community engagement tracking
-              gtag('event', 'community_visit', {
-                event_category: 'engagement',
-                event_label: 'exam_resource_community'
+              // Multiple observation methods for maximum compatibility
+              setInterval(observeNavigation, 500);
+              new MutationObserver(observeNavigation).observe(document.body, {
+                childList: true, subtree: true, attributes: true
               });
             }
 
-            // Start analytics
+            // ===== UNIVERSAL HELPER FUNCTIONS =====
+            function classifyLink(link) {
+              const href = link.href.toLowerCase();
+              const text = link.textContent.toLowerCase();
+              
+              if (href.includes('/java') || text.includes('java')) return 'java_subject';
+              if (href.includes('/linux') || text.includes('linux')) return 'linux_subject';
+              if (href.includes('/dsa') || text.includes('dsa')) return 'dsa_subject';
+              if (href.includes('/database') || text.includes('database')) return 'database_subject';
+              if (href.includes('/os') || text.includes('operating system')) return 'os_subject';
+              if (href.includes('/cpp') || text.includes('c++')) return 'cpp_subject';
+              if (href.includes('/c.architecture') || text.includes('architecture')) return 'architecture_subject';
+              if (href.includes('/cn.protocols') || text.includes('protocols')) return 'protocols_subject';
+              if (href.includes('/ip1') || text.includes('internet programming')) return 'ip1_subject';
+              if (href.includes('/c.networking') || text.includes('networking')) return 'networking_subject';
+              
+              if (text.includes('study guide') || text.includes('conquer') || text.includes('pass like')) return 'study_guide';
+              if (text.includes('ue') || text.includes('exam')) return 'exam_paper';
+              if (text.includes('solved')) return 'solved_paper';
+              if (text.includes('test')) return 'test_paper';
+              if (text.includes('hot') || text.includes('🔥')) return 'trending_content';
+              if (text.includes('new') || text.includes('✨')) return 'new_content';
+              
+              return 'general_navigation';
+            }
+
+            function isInteractiveElement(element) {
+              return element.closest('a, button, [class*="tip"], [class*="answer"], [class*="reveal"], pre, code, [onclick], [role="button"]') !== null;
+            }
+
+            function classifyInteraction(element) {
+              if (element.closest('[class*="tip"], [class*="answer"], [class*="reveal"]')) return 'content_reveal';
+              if (element.closest('pre, code')) return 'code_interaction';
+              if (element.closest('button')) return 'button_click';
+              if (element.closest('a')) return 'link_click';
+              return 'general_interaction';
+            }
+
+            function extractContextFromURL(url) {
+              const tempLink = document.createElement('a');
+              tempLink.href = url;
+              return detectUniversalContext(tempLink.pathname);
+            }
+
+            function calculateEngagementScore(metrics, events) {
+              const timeScore = Math.min(metrics.activeTime / 60000, 1) * 30;
+              const scrollScore = (metrics.maxScrollDepth / 100) * 25;
+              const pageScore = Math.min(metrics.pagesVisited.size / 10, 1) * 20;
+              const interactionScore = Math.min(Object.values(events).reduce((a, b) => a + b, 0) / 20, 1) * 25;
+              return Math.round(timeScore + scrollScore + pageScore + interactionScore);
+            }
+
+            function detectLearningPattern(metrics) {
+              if (metrics.coursesAccessed.size >= 3) return 'multi_subject_explorer';
+              if (metrics.pagesVisited.size >= 5) return 'deep_diver';
+              if (metrics.maxScrollDepth >= 80) return 'thorough_reader';
+              return 'casual_browser';
+            }
+
+            function assessJourneyStage(metrics) {
+              const sessionCount = parseInt(localStorage.getItem('total_sessions') || '0') + 1;
+              localStorage.setItem('total_sessions', sessionCount.toString());
+              
+              if (sessionCount === 1) return 'first_visit';
+              if (sessionCount <= 3) return 'new_user';
+              if (sessionCount <= 10) return 'active_user';
+              return 'power_user';
+            }
+
+            // ===== UNIVERSAL INITIALIZATION =====
+            function initUniversalAnalytics() {
+              console.log('🚀 Universal Analytics Initialized - Future Proof Tracking Active');
+              
+              // Initial page view
+              const context = detectUniversalContext();
+              gtag('event', 'universal_page_view', {
+                content_category: context.resourceType,
+                academic_level: context.academicLevel,
+                resource_type: context.resourceType,
+                content_freshness: context.freshness,
+                is_featured_content: context.isHot || context.isNew,
+                course_context: context.courseCode,
+                page_title: context.title.substring(0, 150),
+                word_count: document.body.textContent?.length || 0
+              });
+              
+              // Start universal tracking
+              initUniversalEventCapture();
+              
+              // Track community engagement
+              gtag('event', 'universal_community_visit', {
+                event_category: 'community',
+                event_label: 'educational_resource_platform'
+              });
+            }
+
+            // Auto-initialize with fallbacks
             if (document.readyState === 'loading') {
-              document.addEventListener('DOMContentLoaded', initEnhancedAnalytics);
+              document.addEventListener('DOMContentLoaded', initUniversalAnalytics);
             } else {
-              initEnhancedAnalytics();
+              initUniversalAnalytics();
             }
 
-            console.log('✅ Enhanced Resource Analytics Loaded - Tracking Subject Hubs vs Direct Access');
+            // Fallback initialization for dynamic content
+            setTimeout(initUniversalAnalytics, 1000);
+            setInterval(() => {
+              if (!window.analyticsInitialized) {
+                initUniversalAnalytics();
+                window.analyticsInitialized = true;
+              }
+            }, 5000);
+
+            console.log('✅ Universal Super Analytics Loaded - Future Proof Tracking Active');
+            window.analyticsInitialized = true;
           `,
         }}
       />

@@ -28,7 +28,8 @@ description: A structured learning approach to help everyone succeed
 
 ###### **TRENDING NOW**
 
-- [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]] ✨✨
+- [[IP1 (CP 221) UE 2024-2025 SOLVED INTERACTIVE]] (<span style="color:rgb(255, 148, 148)">HOT</span> 🔥🔥)
+- [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]] ✨,
 
 ###### UPLOADED TODAY
 - [[CPP]] (**FIRST YEAR C++ RESOURCES**)  <span style="color:rgb(255, 0, 255)">NEW</span>

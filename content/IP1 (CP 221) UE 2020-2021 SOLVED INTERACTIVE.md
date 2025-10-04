@@ -1,4 +1,37 @@
-
+---
+course: Internet Programming and Applications I
+code: CP 221
+year: 2020-2021
+semester: UE
+exam_type: Final
+difficulty: Medium
+title: IP1 (CP 221) UE 2020-2021 SOLVED INTERACTIVE
+description: Solved interactive end of semester exam for Internet Programming I covering fundamental web technologies and programming concepts
+topics:
+  - HTML5
+  - CSS3
+  - JavaScript
+  - DOM Manipulation
+  - Forms Validation
+  - Event Handling
+  - Responsive Design
+  - Basic Web APIs
+tags:
+  - internet-programming
+  - university-exam
+  - cp221
+  - udom
+  - solved
+  - interactive
+aliases:
+  - Internet Programming I Final Exam 2020-21
+  - CP221 UE Solved Paper
+  - IP1 Interactive Solutions
+institution: University of Dodoma
+status: Solved
+interactivity: true
+cssclasses: exam-note solved-exam interactive
+---
 #### **Internet Programming and Applications  - Exam**
 
 

@@ -1,4 +1,37 @@
-
+---
+course: Internet Programming and Applications I
+code: CP 221
+year: 2023-2024
+semester: TEST1
+exam_type: Test
+difficulty: Medium
+title: IP1 (CP 221) TEST1 2023-2024 SOLVED INTERACTIVE
+description: Solved interactive test 1 for Internet Programming I covering fundamental web technologies and programming concepts
+topics:
+  - HTML5
+  - CSS3
+  - JavaScript
+  - DOM Manipulation
+  - Forms Validation
+  - Event Handling
+  - Responsive Design
+  - Basic Web APIs
+tags:
+  - internet-programming
+  - university-exam
+  - cp221
+  - udom
+  - solved
+  - interactive
+aliases:
+  - Internet Programming and Applications I Test 1 Exam 2023-24
+  - CP221 TEST 1 Solved Paper
+  - IP1 Interactive Solutions
+institution: University of Dodoma
+status: Solved
+interactivity: true
+cssclasses: exam-note solved-exam interactive
+---
 **CP221: IP 1**  
 **TEST ONE 2024**
 

@@ -41,6 +41,7 @@ export default (() => {
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta property="og:image" content="https://greensr2.netlify.app/static/og-image.png" />
+        <meta name="google-site-verification" content="DMUHK_vnozgsJbQBaxx9TnfGpEwl0H73e9-7apJsv38" />
 
         {cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
           <>
