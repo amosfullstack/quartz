@@ -72,13 +72,11 @@ instructions:
 **a)** Simplify the following functional expressions using Boolean algebra and its identities. List the identity used at each step.  
 **[2 Marks Each]**
 
-$$\begin{align*}
-&\text{i. }  F(x,y,z) = \hat{x}y + xy\bar{z} + xyz \\
-&\text{ii. }  F(w,x,y,z) = (x\bar{y} + \bar{ω}z)(w\bar{x} + y\bar{z}) \\
-&\text{iii. }  F(x,y,z) = \overline{(x+y)}.\overline{(x+y)}
-\end{align*}$$
+![[Pasted image 20251007174915.png]]
 
-**b) Given the function:** $$ ( F(x,y,z) = xyz + x\bar{y}z + xy)$$
+**b) Given the function:** 
+
+![[Pasted image 20251007174940.png]]
 
 -   **i.** List the truth table for \( F \).  
     **[5 Marks]**
