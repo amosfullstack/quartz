@@ -26,8 +26,31 @@ description: A structured learning approach to help everyone succeed
 
 ----
 
-###### **TRENDING NOW**
+###### **RECENT (04/04/2026)**
 
+#### User Guide.
+i. Switch to DarkMode for better View (Click the the MOON🌙 and SUN☀️  to Switch)(<span style="color:rgb(0, 176, 80)">kushoto</span>)<br>
+ii. Click the MGODI 💎 Diamond, to Return to <span style="color:rgb(0, 176, 80)">HomePage</span> when lost in materials.
+### IP 2 RESOURCES
+**Internet Programming and Applications II (CP 311)**. Complete and all you need.
+
+- [[IP2 (CP 311) UE 2021-2022 SOLVED]]
+- [[IP2 (CP 311) UE 2019-2020 SOLVED DEGREE]]
+- [[IP2 (CP 311) UE 2019-2020 SOLVED NON DEGREE]]
+- [[IP2 (CP 311) UE 2018-2019 SOLVED]]
+- [[IP2 (CP 311) UE 2017-2018 SOLVED]]
+- [[IP2 (CP 311) MKEKA 1]] 🔥🔥(<span style="color:rgb(255, 0, 255)">Recommended</span>)
+- [[IP2 (CP 311) MKEKA 2]]
+- [[IP2 (CP 311) MKEKA 3]]
+- [[IP2 (CP 311) MKEKA 4]]
+- [[IP2 (CP 311) MKEKA 5]]
+- [[IP2 (CP 311) MKEKA 6]]
+- [[IP2 (CP 311) MKEKA 7]]
+
+
+
+
+###### PAST
 - [[IP1 (CP 221) UE 2024-2025 SOLVED INTERACTIVE]] (<span style="color:rgb(255, 148, 148)">HOT</span> 🔥🔥)
 - [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]] ✨,
 
