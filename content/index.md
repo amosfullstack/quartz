@@ -34,7 +34,8 @@ ii. Click the MGODI 💎 Diamond, to Return to <span style="color:rgb(0, 176, 80
 ### IP 2 RESOURCES
 **Internet Programming and Applications II (CP 311)**. Complete and all you need.
 
-- [[IP2 (CP 311) TEST 1 2025-2026]] 🔥🔥
+- [[IP2 (CP 311) TEST 1 2025-2026]] 🔥
+- [[IP2 (CP 311) TEST 2  2025-2026]] 🔥
 - [[IP2 (CP 311) UE 2021-2022 SOLVED]]
 - [[IP2 (CP 311) UE 2019-2020 SOLVED DEGREE]]
 - [[IP2 (CP 311) UE 2019-2020 SOLVED NON DEGREE]]
