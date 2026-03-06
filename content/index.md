@@ -30,7 +30,12 @@ description: A structured learning approach to help everyone succeed
 
 #### User Guide.
 i. Switch to DarkMode for better View (Click the the MOON🌙 and SUN☀️  to Switch)(<span style="color:rgb(0, 176, 80)">kushoto</span>)<br>
-ii. Click the MGODI 💎 Diamond, to Return to <span style="color:rgb(0, 176, 80)">HomePage</span> when lost in materials.
+ii. Click the MGODI 💎 Diamond, to Return to <span style="color:rgb(0, 176, 80)">HomePage</span> when lost in materials. <br>
+iii. Join ALL MGODI Communities today for Instant Update Information(<span style="color:rgb(255, 0, 255)">Never Miss Out</span>).
+- Watsap Channel 📢 https://chat.whatsapp.com/BRAnWaGiZ4E76HAQhlP8k1
+- Telegram Channel 🪂 https://t.me/mgodi_telegram
+- Watsap Chat 💬 https://chat.whatsapp.com/KNkOdgV338J687xxDViKjv?mode=hq1tcla
+- Telegram Chat 🏆 https://t.me/mgodi_telegram_com
 ### IP 2 RESOURCES
 **Internet Programming and Applications II (CP 311)**. Complete and all you need.
 
