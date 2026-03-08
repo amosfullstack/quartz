@@ -1,5 +1,4 @@
-@use "./base.scss";
-
+ @use "./base.scss";
 
 // 1. The Heading Customization
 
@@ -131,6 +130,8 @@ a:hover {
 }
 
 /* === Code & Inline Code === */
+//1. Version One Of Code Background
+
 code {
   background: #161b22;
   color: #ff7b72;
@@ -144,6 +145,7 @@ pre {
   border-radius: 8px;
   overflow-x: auto;
 }
+
 
 /* === Blockquotes === */
 /*
@@ -234,10 +236,10 @@ th {
   }
   
   // Code blocks with cream-appropriate styling
-  pre, code {
-    background: #F5F0E6 !important;
-    border: 1px solid #D4C9B1;
-    color: #5C5343;
+   pre, code {
+     background: #F5F0E6 !important;
+     border: 1px solid #D4C9B1;
+     color: #5C5343;
   }
 }
 
@@ -246,7 +248,7 @@ th {
   background: rgba(255, 210, 54, 0.3) !important; // Softer yellow
 }
 
-  
+
   
 
 
