@@ -26,7 +26,14 @@ description: A structured learning approach to help everyone succeed
 
 ----
 
-###### **RECENT (04/04/2026)**
+###### **RECENT (16/03/2026)**
+
+### ANDROID DEV  RESOURCES
+
+- [[ANDROID (CP 313) UE 2022-2023 SOLVED]] (HOT 🔥🔥)
+- [[ANDROID (CP 313) UE 2021-2022 SOLVED]]
+- [[ANDROID (CP 313) UE 2020-2021 SOLVED]]
+
 
 #### User Guide.
 i. Switch to DarkMode for better View (Click the the MOON🌙 and SUN☀️  to Switch)(<span style="color:rgb(0, 176, 80)">kushoto</span>)<br>
@@ -36,34 +43,8 @@ iii. Join ALL MGODI Communities today for Instant Update Information(<span style
 - Telegram Channel 🪂 https://t.me/mgodi_telegram
 - Watsap Chat 💬 https://chat.whatsapp.com/KNkOdgV338J687xxDViKjv?mode=hq1tcla
 - Telegram Chat 🏆 https://t.me/mgodi_telegram_com
-### IP 2 RESOURCES
-**Internet Programming and Applications II (CP 311)**. Complete and all you need.
-
-- [[IP2 (CP 311) TEST 1 2025-2026]] 🔥
-- [[IP2 (CP 311) TEST 2  2025-2026]] 🔥
-- [[IP2 (CP 311) UE 2021-2022 SOLVED]]
-- [[IP2 (CP 311) UE 2019-2020 SOLVED DEGREE]]
-- [[IP2 (CP 311) UE 2019-2020 SOLVED NON DEGREE]]
-- [[IP2 (CP 311) UE 2018-2019 SOLVED]]
-- [[IP2 (CP 311) UE 2017-2018 SOLVED]]
-- [[IP2 (CP 311) MKEKA 1]] (<span style="color:rgb(255, 0, 255)">Recommended</span>)
-- [[IP2 (CP 311) MKEKA 2]]
-- [[IP2 (CP 311) MKEKA 3]]
-- [[IP2 (CP 311) MKEKA 4]]
-- [[IP2 (CP 311) MKEKA 5]]
-- [[IP2 (CP 311) MKEKA 6]]
-- [[IP2 (CP 311) MKEKA 7]]
 
 
-
-
-###### PAST
-- [[IP1 (CP 221) UE 2024-2025 SOLVED INTERACTIVE]] (<span style="color:rgb(255, 148, 148)">HOT</span> 🔥🔥)
-- [[DATABASE (CP 224) UE 2024-2025 SOLVED INTERACTIVE]] ✨,
-
-###### UPLOADED TODAY
-- [[CPP]] (**FIRST YEAR C++ RESOURCES**)  <span style="color:rgb(255, 0, 255)">NEW</span>
-- [[DATABASE1]] (FIRST YEAR INTRO TO DATABASES) <span style="color:rgb(255, 0, 255)">NEW</span>
 
 # Welcome to Our Community 🌱
 
