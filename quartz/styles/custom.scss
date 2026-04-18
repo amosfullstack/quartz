@@ -253,6 +253,68 @@ th {
 // SHOP
 // =========
 
+// Add at the bottom of the file
+
+// Shop page styles
+.shop-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.p-card {
+  border: 1px solid var(--lightgray);
+  border-radius: 12px;
+  padding: 15px;
+  background: var(--light);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .p-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .p-price {
+    color: var(--secondary);
+    font-weight: bold;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+  }
+  
+  .p-btn {
+    display: block;
+    text-align: center;
+    background: #25D366;
+    color: white !important;
+    padding: 12px;
+    border-radius: 6px;
+    text-decoration: none !important;
+    font-weight: bold;
+    margin-top: auto;
+    transition: background 0.2s;
+    
+    &:hover {
+      background: #128C7E;
+    }
+  }
+}
 
   
 

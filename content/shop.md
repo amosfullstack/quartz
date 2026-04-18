@@ -1,51 +1,7 @@
 ---
 title: 100x Tech Productivity Gear
 ---
-
-<style>
-  .shop-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
-  }
-  .p-card {
-    border: 1px solid var(--lightgray);
-    border-radius: 12px;
-    padding: 15px;
-    background: var(--light);
-    display: flex;
-    flex-direction: column;
-  }
-  .p-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 12px;
-  }
-  .p-title { font-size: 1.25rem; font-weight: bold; margin-bottom: 8px; }
-  .p-price { color: var(--secondary); font-weight: bold; margin-bottom: 12px; }
-  
-  /* WhatsApp Green Button */
-  .p-btn {
-    display: block;
-    text-align: center;
-    background: #25D366; /* WhatsApp Green */
-    color: white !important;
-    padding: 12px;
-    border-radius: 6px;
-    text-decoration: none !important;
-    font-weight: bold;
-    margin-top: auto;
-    transition: background 0.2s;
-  }
-  .p-btn:hover {
-    background: #128C7E;
-  }
-
-.intro-section { max-width: 800px; margin: 2rem 0; border-left: 4px solid var(--tertiary); padding-left: 1.5rem; }
-</style>
+---
 
 # My Top 7 Tech Gear I use Daily to 100x my Productivity
 
