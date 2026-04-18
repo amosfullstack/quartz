@@ -26,6 +26,86 @@ description: A structured learning approach to help everyone succeed
 
 ----
 
+
+
+###### Top 7 Tech Gear you need to 100x your Productivity
+<style>
+  .hero-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 2rem 0;
+    border: 1px solid var(--lightgray);
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* We use a real img tag now, styled to cover the background */
+  .hero-img-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(0.6); /* This darkens the image so text stays readable */
+    transition: transform 0.8s ease;
+  }
+
+  .hero-container:hover .hero-img-tag {
+    transform: scale(1.05);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 0 20px;
+    pointer-events: none; /* Allows clicks to pass through to the container if needed */
+  }
+
+  .hero-content h2 {
+    color: #ffffff !important;
+    margin: 0 0 10px 0 !important;
+    font-size: 2.2rem;
+    font-weight: 800;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.6);
+  }
+
+  .hero-content p {
+    color: rgba(255,255,255,0.9) !important;
+    margin-bottom: 25px !important;
+  }
+
+  .hero-btn {
+    display: inline-block;
+    background: #25D366; /* MGODI Green */
+    color: white !important;
+    padding: 14px 32px;
+    border-radius: 50px;
+    text-decoration: none !important;
+    font-weight: bold;
+    pointer-events: auto; /* Re-enables clicking for the button */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+</style>
+
+<div class="hero-container">
+  <img src="fullsetup.jpg" class="hero-img-tag" alt="Full Setup">
+  
+  <div class="hero-content">
+    <h2>Build Your Ultimate Workspace</h2>
+    <p>Explore the curated kit I use to ship production code.</p>
+    <a href="/shop" class="hero-btn">VIEW ALL GEAR DETAILS →</a>
+  </div>
+</div>
+
+
 ###### **RECENT (16/03/2026)**
 
 ### ANDROID DEV  RESOURCES

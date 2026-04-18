@@ -3,18 +3,21 @@
 
 
 **1. What is a Link?**
+
 > [!Tip]- Answer (Click to show)
 > A link refers to the connectivity between two devices. It includes the type of cables and protocols used in order for one device to be able to communicate with the other.
 
 ---
 
 **2. What are the layers of the OSI reference model?**
+
 > [!Tip]- Answer (Click to show)
 > There are 7 OSI layers: Physical Layer, Data Link Layer, Network Layer, Transport Layer, Session Layer, Presentation Layer and Application Layer.
 
 ---
 
 **3. What is backbone network?**
+
 > [!Tip]- Answer (Click to show)
 > A backbone network is a centralized infrastructure that is designed to distribute different routes and data to various networks. It also handles management of bandwidth and various channels.
 
