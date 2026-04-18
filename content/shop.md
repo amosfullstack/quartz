@@ -3,7 +3,7 @@ title: 100x Tech Productivity Gear
 ---
 ---
 
-# My Top 7 Tech Gear I use Daily to 100x my Productivity
+# Top 7 Tech Gear you need to 100x your Productivity
 
 ### The Minimalist Dev Kit
 #### Essential Gear for Technical Founders
