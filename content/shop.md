@@ -10,7 +10,7 @@ title: 100x Tech Productivity Gear
 
 > [!tip]- Why I use these Tools
 > 
-> When you are building a startup, your hardware needs to be as reliable as your code. I have taken time optimizing my workspace to maximize output while protecting my health. This is the curated **work station gear** I use every day to keep my focus sharp and consistent.
+> Building for long hours requires a workspace that supports focus, comfort, and consistency. I curated these desk setup tools for developers, students, and creators who want a cleaner and more productive workstation without overspending. If you want to upgrade your setup, choose a product below and message me directly on WhatsApp.
 > 
 > ---
 > 
@@ -32,7 +32,7 @@ title: 100x Tech Productivity Gear
   <div class="p-card">
     <img src="keyboard.jpg" alt="Keyboard">
     <div class="p-title">K2 Pro Mechanical Keyboard</div>
-    <p>Tactile switches to 10x your documentation speed.</p>
+    <p>A smoother typing experience for coding and writing.</p>
     <div class="p-price">65,000/=</div>
     <a href="https://wa.me/255744026640?text=Hello%20Amos,%20I%20want%20to%20order%20the%20K2%20Mechanical%20Keyboard" class="p-btn">Chat on WhatsApp →</a>
   </div>
@@ -91,5 +91,5 @@ title: 100x Tech Productivity Gear
 
 ## How to Order
 * **Choose your gear** and click the WhatsApp button to start a chat.
-* **Payment:** I accept **M-Pesa** or Direct Bank Transfer.
-* **Delivery:** Free shipping within **Dodoma**.
+* **Payment:** I accept all Payment methods.
+* **Delivery:** Free delivey within **UDOM**, at your door step.
